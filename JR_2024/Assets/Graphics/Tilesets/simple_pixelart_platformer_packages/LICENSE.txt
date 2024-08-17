@@ -1,0 +1,16 @@
+Simple pixel art platformer package
+
+by mnikn
+
+------------------------------
+
+License (Creative Commons Zero, CC0)
+http://creativecommons.org/publicdomain/zero/1.0/
+
+You may use these assets in personal and commercial projects.
+Credit (mnikn or www.mnikn.com) would be nice but is not mandatory.
+
+------------------------------
+
+Follow on Twitter for updates:
+@mnikn3
