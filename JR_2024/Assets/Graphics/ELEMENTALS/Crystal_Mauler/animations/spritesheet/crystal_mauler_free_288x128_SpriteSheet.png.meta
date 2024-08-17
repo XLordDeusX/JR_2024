@@ -1,0 +1,4109 @@
+fileFormatVersion: 2
+guid: 126bd6ae0b3bc004eb010dbb2c97256a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1665
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e62d335343e821428f59fd1980a9fdf
+      internalID: -1751736229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1665
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be770a9f9a21efb4f8f8902f99b97829
+      internalID: -1330250604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1665
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e767e0bdcd9e146884ea9fa42f76ba
+      internalID: 705673022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1665
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7c02fcd43f9034b90cd66871fa956a
+      internalID: -1391456763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1665
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd97cbe899e297f4385aff86cf59ab8e
+      internalID: -1288821573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1665
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a911bc46c55f55439248ee21f182810
+      internalID: -1269579611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1665
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166ed7bee09130148b341d6d18109989
+      internalID: -102744270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 1665
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10141c0e9c92c64a8c1ce769b66ed26
+      internalID: 1362801732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1537
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3fe2de2fdb85f46bf8d0982596fd1e
+      internalID: -1469532041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1539
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8803f6cf30155044ba9110e197581733
+      internalID: -481205107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1537
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508dc29145fbcb445af1499827a22697
+      internalID: -117979818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1537
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee0f10656c393e42951ade79a84dc6b
+      internalID: -1469022457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1537
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1437a71fa9ff1647a8a0cbe039890a3
+      internalID: 267064560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 1537
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e406d15bf0caa14aa7bb4a694dafd56
+      internalID: 1563227501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1537
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1be895aba9db924eb6e9b5a52d549ad
+      internalID: -979974751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 1537
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eab89980e5512249a553fab5dfc69ae
+      internalID: 1750802752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1409
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37113ec2400638b498f86273124cc883
+      internalID: -675588089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1409
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb9a70d2b22f0e478e521fdb153c60f
+      internalID: 1461464245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1409
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc8e57d782f3f14c84e51d1d8becc0a
+      internalID: 1068939094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1283
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5090a02c41769034598606bad2f23939
+      internalID: 1282167769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1283
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527fb4d92635298489200379ce0f863c
+      internalID: -1206429089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1283
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ccb94008b88c04092223352a17674b
+      internalID: 1867548115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1153
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c6f5ce1dfdbc0479966cdfef04f232
+      internalID: 771006345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1153
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f175ee817cc33140ba4352d83f0e662
+      internalID: -877509663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1153
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c598569e037d25e4aa45c49232e8f968
+      internalID: -60434515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1153
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e3f4511a2b7db45b835ba725f8a7fe
+      internalID: 480458679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1153
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0400e62c89cdf458bf2a962eeb6c71
+      internalID: -455437113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1153
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bc6a7e399e39946910fbd8aff45208
+      internalID: -1513453025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1153
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5298896246adf4fb78634bad29a9ed
+      internalID: 1118016556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 1154
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdd7f70a5849dd46b3dace2a291282d
+      internalID: 970334560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 1155
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77798e2be716ad944848e2a45b281d58
+      internalID: -877981500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 2721
+        y: 1156
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b86313a1c757042a6254a8431aa92f
+      internalID: -1402014196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 1155
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfca04415a07394dbbbb384c7992e77
+      internalID: -631136039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 3297
+        y: 1155
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057b2e5d2afa29f418e478c866b1d6ed
+      internalID: 1991203561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 1155
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831af4220d7f93f44a825229c4eefb5b
+      internalID: 1156012560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 3873
+        y: 1155
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96acf0a89f8f0074e93d5bf4e720ff6b
+      internalID: -578060220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 4161
+        y: 1155
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3704866076c044d987933e42830243
+      internalID: -137068209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 4449
+        y: 1155
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf811e59999cb1c4ca0e4a49d6cb5e38
+      internalID: 89615284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 4724
+        y: 1153
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9be0e85a8447504bb744d269214cfb6
+      internalID: -994470571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 4737
+        y: 1153
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e103f9a623d4cb439bd7945edb75202
+      internalID: 44969002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 5012
+        y: 1153
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5ebf60b1061e9439477756c071c760
+      internalID: 1932116509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 5018
+        y: 1156
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bd7e1d9ef30f74ebc2172853cf0c30
+      internalID: 1895462072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 5020
+        y: 1153
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1120b7b278b518a4381961f88b3ba3b0
+      internalID: 1304872805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 5063
+        y: 1155
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe6ffdec0959f14099bf6359fef9ef0
+      internalID: 49861747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 5298
+        y: 1155
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2f25a580d26724d8de6039ecdc1c6a
+      internalID: 942452200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 5309
+        y: 1153
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879b646a5ed88d44b8e857fbb14ab501
+      internalID: -2120436303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 5583
+        y: 1153
+        width: 71
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ab6e7520a4f7f49ba4818125c0f202
+      internalID: 949573150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 5885
+        y: 1153
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1511741425d4f4a936fda501453ed7
+      internalID: -1096350221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1026
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c1551505e90fb4680b0da2128a9ef1
+      internalID: -1044475314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1027
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f5c65765d97e24ab63f61dba69a80b
+      internalID: 357548293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1027
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5492d3253d7f94cbd7d78ce7fc5b9a
+      internalID: -214525346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 1026
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c280dca86017db74997d49e08af5bece
+      internalID: -1714783929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1026
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0c241564bed1445b38cddb1212c33c
+      internalID: -1224524244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1026
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e29acfee9e46242b0d95412f59cae2
+      internalID: -135534158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1034
+        width: 53
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebb665aaa6243c43bb0bf3eea136662
+      internalID: -320784584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 1032
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eeb765e069b1a749b785393f8afdc01
+      internalID: 1069551723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 897
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09dc127f9ec7e04a8549a6d89f9e759
+      internalID: -1704671044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 897
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5330829b30d2254e95cbcab8c313e65
+      internalID: -1550579588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 897
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c750f4f013ed02e4683573fefac8ab1c
+      internalID: 2087199484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 897
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdaf98d8db64a346aa96be6b1abaa85
+      internalID: 1578536058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 897
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d09593d7b753334db85afe89a914c4e
+      internalID: 596900468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 897
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a07ce2134cd6e1408774f823f5a984a
+      internalID: -352858512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 897
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918f74e7eda7feb4aa07915f83b0edf6
+      internalID: 1695331657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 897
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34544cfa9399af94d8e1b012a2c472d7
+      internalID: 2012087781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 769
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbd24a74c671534b8790e6da72d00ac
+      internalID: -2134406416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 769
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c49b262853ac7408d434e83de0ddf7
+      internalID: -736303607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 769
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bebfa7b7a098d24f8a8d1ff7761c945
+      internalID: 2074120569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 769
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6f6dd4477ce4e408648ef71ff2bb35
+      internalID: -1130415355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 769
+        width: 64
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e0a246b51fd1143afe602ba10cb44e
+      internalID: -1942935476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 769
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8bfb12158334941926a1a95637bfca
+      internalID: 1820394425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 783
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb495dc847632d94d9178028f4f5f4c3
+      internalID: -786558555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 769
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1c9858a6cb9bd47bd41acfa6c84fcf
+      internalID: 1796761353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 641
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d3ae4723be1b4b80c1a1a0fc9cbc9
+      internalID: 490404109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 641
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c083c3922ee9664ab1f20bdafc84b84
+      internalID: 1455745827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 641
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6803bb142db444aa13970b3d0f2140
+      internalID: 891112051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 641
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832f75f7d370a4941ac2e4aa64f2cf1a
+      internalID: 1341636550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 641
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937fd430095b7f247af14aa78559299c
+      internalID: -906787322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 674
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7c2edad5baa844eb2aaf1ad5de6656
+      internalID: -395923618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 641
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f38b8d687e6c3d438bf27688c04bf4e
+      internalID: 102460705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 671
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e2df6a5735f9c43a25f97d9d8b3555
+      internalID: 1599783750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 641
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9565f0c25f9049e44805741b74e60071
+      internalID: 1488353891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 513
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d024ddb1a91e304fb67ac037e60dadc
+      internalID: 848858570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 513
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe5200d41777344a82f0a342ad2d63e
+      internalID: 1915090026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 3081
+        y: 548
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141cc93884bf2984fbecc9cd0fedd4a4
+      internalID: 1490456854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 513
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ed9444699faed4cb40a3a5b88152cc
+      internalID: -1526599625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 561
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5617186c68d02d24ca938a911ba829f7
+      internalID: 158742746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 513
+        width: 82
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22f6b42dad9aef48bf36d60099bea65
+      internalID: -128382161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 3658
+        y: 513
+        width: 76
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b0193cbd3873241bf2f8a16cc9d37a
+      internalID: -1751248038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 513
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e50ffbb6bc2d046a109b0b74307775
+      internalID: -1078435492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 513
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8b94df858702642a61cdb5b18c508f
+      internalID: -2064291582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 513
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28cf2c60eb1e2549ac149c808126448
+      internalID: 1608077730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 513
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f7934a2c4ae9a4da8425aca1f0d8a6
+      internalID: -1541931383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 513
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42265fff814c8b419aebb52e024e2bb
+      internalID: -1946090051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 513
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce1059f58b26434e85f5bdde3f5c16f
+      internalID: 366139006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 513
+        width: 59
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09c315be352c62449f7feb4d748616e
+      internalID: 331663380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 513
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70323b26428c7c3438873f8c45e5f814
+      internalID: -509369756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 513
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225cc2fc68491684f91bd7beaa08ad5a
+      internalID: -1665342883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 513
+        width: 72
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed0d5c8d6d018d419329d72ae869e53
+      internalID: 2128537445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 513
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425c70dd6b6995647b6aafefb983bc75
+      internalID: 2015756018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 3078
+        y: 540
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d0a80f608b0074292dceb0e4f96c6e
+      internalID: 626262143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 513
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c1ec97d5bd36f4a8804026f738b500
+      internalID: -446555191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 513
+        width: 58
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e06fc41af9ecb64f9d96931878ec7ef
+      internalID: 1311069394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 3884
+        y: 513
+        width: 68
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fdbf38877edf3479c3289a94469c10
+      internalID: 1763700668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 3956
+        y: 513
+        width: 70
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf3d1e0390f4264b960afd0e8ecc75f
+      internalID: 1715520320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 513
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cd51a09198ace4d98c5632be9763c2
+      internalID: -1530619036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 4236
+        y: 513
+        width: 77
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d575ed412e35340bde168f6a756296
+      internalID: 1998281592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 4451
+        y: 513
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b29a7b872eca8542a31464b3ed8f900
+      internalID: 97833598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 4736
+        y: 513
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0102f54ea5bc84bbc9f2bfd5be4c46
+      internalID: 21353720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 513
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6944218c74f42409746e249cc690e7
+      internalID: -1957738619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 513
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0ff14fba1816f4896cb927eab1830a
+      internalID: -856505680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 513
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9777545d6c16a4cb6b1d5ac2589d2d
+      internalID: 1641143403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 513
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c12f98109a163b4db48e216bb82c0e6
+      internalID: 1645026455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 513
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210e99d986e80ef44a33fc316ae1c6d9
+      internalID: 994560896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 513
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e16d188093e3564599fd1f0f986d3d4
+      internalID: -1088960275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 4544
+        y: 513
+        width: 37
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d84ec0635fcdff4181389c001aafcde
+      internalID: 1436976405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 436
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5617c80648bce414b865a83f1f6dc053
+      internalID: 1781337363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 416
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5299411fa431ce54a824d037219f3190
+      internalID: -1788684429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 439
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9ad7c10d9deb54fba3432cc29c6d80
+      internalID: -1057059900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 385
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c33c93553375924f848f2f119e51431
+      internalID: -939040838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 385
+        width: 115
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54eff76a3f1c3424cbc2b1162bd219d2
+      internalID: 2046280140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_120
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 446
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088b55930cd8a9845ae05e8ddf8dee3b
+      internalID: -1549959204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_121
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 451
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916d168afdc76ec44bda9a2611dba50f
+      internalID: 1688096959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_122
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 385
+        width: 117
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe6730ced2123f4a87b28d86a2f1b73
+      internalID: 919988339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_123
+      rect:
+        serializedVersion: 2
+        x: 3049
+        y: 385
+        width: 114
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84f56ad315f8234cb8b807c33d25939
+      internalID: 2062142272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_124
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 385
+        width: 114
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c866ab2cbf94be4da60a210eb12d896
+      internalID: 1282037446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_125
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 414
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe3f3fe5ffeb834983bba2363592daa
+      internalID: 1727432562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_126
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 385
+        width: 68
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b926b642c3bfa4393f4651dccc4041
+      internalID: 942884332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_127
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 435
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf94c85efba1b914995c606cebef1d00
+      internalID: -1991708728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_128
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 385
+        width: 78
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7975140f3f0cda4aac53088eabc904b
+      internalID: -1522405168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_129
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 385
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b22fbe69dac628418baac1f139ffd7f
+      internalID: 1773744024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_130
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 422
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8a89eae46fe0742be88294f39ab856
+      internalID: 2106490829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_131
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 385
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddec19ca1e6f30249b46a33b87c5d44b
+      internalID: 319614261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_132
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 385
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bac2fa9ed9363741a8dba12a94ccb07
+      internalID: -403877487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_133
+      rect:
+        serializedVersion: 2
+        x: 3299
+        y: 385
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05e686899e719c48930284a5f643694
+      internalID: -115300368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_134
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 385
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28bf25bb012eb1419d54ba575f8d9e0
+      internalID: 626268696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_135
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 385
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e35d57f2f547a45a68547062281e91
+      internalID: 1528062430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_136
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 385
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66bde6ef8722f024584ca8b6787c6b3a
+      internalID: -1298647016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_137
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 394
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3b498a86e94d14490a92f51cf2207d
+      internalID: -851383279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_138
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 385
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef717c40654a5c44ab7cae5854c8789
+      internalID: 1913161674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_139
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 385
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf71832d398138642b1ba6b49143493a
+      internalID: 812378287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_140
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 385
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf268b455bef7044a937075b76753fe2
+      internalID: -1737659169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_141
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 385
+        width: 90
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52febf78aaf2bd4e965a8bc63091d5a
+      internalID: 9051623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_142
+      rect:
+        serializedVersion: 2
+        x: 3875
+        y: 385
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fa42f77ba5a1a48969728d210e91f0
+      internalID: 188399702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_143
+      rect:
+        serializedVersion: 2
+        x: 3934
+        y: 385
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258269cd648a7484e92b96032ed06030
+      internalID: -459064424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_144
+      rect:
+        serializedVersion: 2
+        x: 3949
+        y: 385
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad41dfce466e869418335d7461a23597
+      internalID: 1890975717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_145
+      rect:
+        serializedVersion: 2
+        x: 3963
+        y: 385
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d403153da744cd34fb5255d1aa66c564
+      internalID: 1021240706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_146
+      rect:
+        serializedVersion: 2
+        x: 3985
+        y: 385
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd45013001785f9469d4e33021cb398a
+      internalID: 970153923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_147
+      rect:
+        serializedVersion: 2
+        x: 4160
+        y: 385
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12addea9773df846b919b1bdebba955
+      internalID: -2103099821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_148
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 385
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d9fd5711af7af4b8946606775026ce
+      internalID: 2066884573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_149
+      rect:
+        serializedVersion: 2
+        x: 3997
+        y: 385
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d938a5a4245ee4cb4c5dbaa64e3ce5
+      internalID: 2018444274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_150
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 257
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9d49d58a3c8b34fb8e7ec1aa1d3ddc
+      internalID: 1353926673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_151
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 257
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebff6da0958f8040945d66246bea517
+      internalID: -1266930260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_152
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 257
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259b1a431b1d10d40be751f639353e86
+      internalID: -2098915792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_153
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 257
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219629561455d0b4fa913eb2d43cfde6
+      internalID: 1825595085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_154
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 257
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda6a3e79e20b7d459c0663847ba8a25
+      internalID: 1938784975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_155
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 257
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c08346631f87349ac892b1c137a94d
+      internalID: 1219024765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_156
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 257
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ee4c0d97dd8124791d804fa0035998
+      internalID: -117342986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_157
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 257
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eff80eccf048c944a8b48edc8419d63
+      internalID: 1262473914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_158
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 257
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85dd68e407ee6e4f9c1b2025882e711
+      internalID: 1434829950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_159
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 129
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd0bd561738be44d8f7df366715f11f
+      internalID: 1877143917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_160
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 129
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520918124e76f5f4cad7578e9c8d1a84
+      internalID: 1734765632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_161
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 129
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4af29bde5eb7a4ba6c7133aaa1c339
+      internalID: 578229143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_162
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 129
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ea26f14bf985e4ab74a9bdc31be267
+      internalID: 224982402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_163
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 129
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fdfa35ae3ca114d9b4bf3694d84437
+      internalID: -1721441892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_164
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 129
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cbf9b57c26ce84c9e4e5bf5bfebab2
+      internalID: -475962112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_165
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f17c286f6294e447bc0d373ca0896f0
+      internalID: -1640205871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_166
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4a29040cc17bb47baa87c91e330ba8
+      internalID: -1334988643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_167
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf176d3b81fc1fb4aa01eb03507ce204
+      internalID: -1208104557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_168
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c375eb0de34b9a46ab3eecca11b5328
+      internalID: -1719986078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_169
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f818b7a1332842d4ca799fa33265b2b5
+      internalID: -1917258033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_170
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91502a303f6e151449ead8ff709dfc4e
+      internalID: 199945765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_171
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 1
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556df83b96977b74a9a299b83877544e
+      internalID: -1606129575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_172
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cb64660ba15944b8309b2a0a0ea20b
+      internalID: 1032182763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_173
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 1
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21993e27c65aff4f92dde654ced9963
+      internalID: -646631343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_174
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 1
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eda51a845eb5f04c825e1395a1e53a8
+      internalID: 1259833721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_175
+      rect:
+        serializedVersion: 2
+        x: 3013
+        y: 1
+        width: 54
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e1a4617657bef4384c1a1c7a9f9b1e
+      internalID: 1598856863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_176
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 1
+        width: 49
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413a00c61315e484991bf6fad1a0c335
+      internalID: -1015231851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_177
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 3
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8487e4e0ead7d043b436f238ab46ee4
+      internalID: -1134824456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_178
+      rect:
+        serializedVersion: 2
+        x: 3587
+        y: 1
+        width: 61
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada3622464d16824b935456297bd9e32
+      internalID: 1881589418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_179
+      rect:
+        serializedVersion: 2
+        x: 3872
+        y: 1
+        width: 71
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18db83adfac6149498e3286e6fb11001
+      internalID: 236059745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_mauler_free_288x128_SpriteSheet_180
+      rect:
+        serializedVersion: 2
+        x: 4166
+        y: 1
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c14bce560868ff4cbb3b90124cfd926
+      internalID: -1919445114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      crystal_mauler_free_288x128_SpriteSheet_0: -1751736229
+      crystal_mauler_free_288x128_SpriteSheet_1: -1330250604
+      crystal_mauler_free_288x128_SpriteSheet_10: -117979818
+      crystal_mauler_free_288x128_SpriteSheet_100: -446555191
+      crystal_mauler_free_288x128_SpriteSheet_101: 1311069394
+      crystal_mauler_free_288x128_SpriteSheet_102: 1763700668
+      crystal_mauler_free_288x128_SpriteSheet_103: 1715520320
+      crystal_mauler_free_288x128_SpriteSheet_104: -1530619036
+      crystal_mauler_free_288x128_SpriteSheet_105: 1998281592
+      crystal_mauler_free_288x128_SpriteSheet_106: 97833598
+      crystal_mauler_free_288x128_SpriteSheet_107: 21353720
+      crystal_mauler_free_288x128_SpriteSheet_108: -1957738619
+      crystal_mauler_free_288x128_SpriteSheet_109: -856505680
+      crystal_mauler_free_288x128_SpriteSheet_11: -1469022457
+      crystal_mauler_free_288x128_SpriteSheet_110: 1641143403
+      crystal_mauler_free_288x128_SpriteSheet_111: 1645026455
+      crystal_mauler_free_288x128_SpriteSheet_112: 994560896
+      crystal_mauler_free_288x128_SpriteSheet_113: -1088960275
+      crystal_mauler_free_288x128_SpriteSheet_114: 1436976405
+      crystal_mauler_free_288x128_SpriteSheet_115: 1781337363
+      crystal_mauler_free_288x128_SpriteSheet_116: -1788684429
+      crystal_mauler_free_288x128_SpriteSheet_117: -1057059900
+      crystal_mauler_free_288x128_SpriteSheet_118: -939040838
+      crystal_mauler_free_288x128_SpriteSheet_119: 2046280140
+      crystal_mauler_free_288x128_SpriteSheet_12: 267064560
+      crystal_mauler_free_288x128_SpriteSheet_120: -1549959204
+      crystal_mauler_free_288x128_SpriteSheet_121: 1688096959
+      crystal_mauler_free_288x128_SpriteSheet_122: 919988339
+      crystal_mauler_free_288x128_SpriteSheet_123: 2062142272
+      crystal_mauler_free_288x128_SpriteSheet_124: 1282037446
+      crystal_mauler_free_288x128_SpriteSheet_125: 1727432562
+      crystal_mauler_free_288x128_SpriteSheet_126: 942884332
+      crystal_mauler_free_288x128_SpriteSheet_127: -1991708728
+      crystal_mauler_free_288x128_SpriteSheet_128: -1522405168
+      crystal_mauler_free_288x128_SpriteSheet_129: 1773744024
+      crystal_mauler_free_288x128_SpriteSheet_13: 1563227501
+      crystal_mauler_free_288x128_SpriteSheet_130: 2106490829
+      crystal_mauler_free_288x128_SpriteSheet_131: 319614261
+      crystal_mauler_free_288x128_SpriteSheet_132: -403877487
+      crystal_mauler_free_288x128_SpriteSheet_133: -115300368
+      crystal_mauler_free_288x128_SpriteSheet_134: 626268696
+      crystal_mauler_free_288x128_SpriteSheet_135: 1528062430
+      crystal_mauler_free_288x128_SpriteSheet_136: -1298647016
+      crystal_mauler_free_288x128_SpriteSheet_137: -851383279
+      crystal_mauler_free_288x128_SpriteSheet_138: 1913161674
+      crystal_mauler_free_288x128_SpriteSheet_139: 812378287
+      crystal_mauler_free_288x128_SpriteSheet_14: -979974751
+      crystal_mauler_free_288x128_SpriteSheet_140: -1737659169
+      crystal_mauler_free_288x128_SpriteSheet_141: 9051623
+      crystal_mauler_free_288x128_SpriteSheet_142: 188399702
+      crystal_mauler_free_288x128_SpriteSheet_143: -459064424
+      crystal_mauler_free_288x128_SpriteSheet_144: 1890975717
+      crystal_mauler_free_288x128_SpriteSheet_145: 1021240706
+      crystal_mauler_free_288x128_SpriteSheet_146: 970153923
+      crystal_mauler_free_288x128_SpriteSheet_147: -2103099821
+      crystal_mauler_free_288x128_SpriteSheet_148: 2066884573
+      crystal_mauler_free_288x128_SpriteSheet_149: 2018444274
+      crystal_mauler_free_288x128_SpriteSheet_15: 1750802752
+      crystal_mauler_free_288x128_SpriteSheet_150: 1353926673
+      crystal_mauler_free_288x128_SpriteSheet_151: -1266930260
+      crystal_mauler_free_288x128_SpriteSheet_152: -2098915792
+      crystal_mauler_free_288x128_SpriteSheet_153: 1825595085
+      crystal_mauler_free_288x128_SpriteSheet_154: 1938784975
+      crystal_mauler_free_288x128_SpriteSheet_155: 1219024765
+      crystal_mauler_free_288x128_SpriteSheet_156: -117342986
+      crystal_mauler_free_288x128_SpriteSheet_157: 1262473914
+      crystal_mauler_free_288x128_SpriteSheet_158: 1434829950
+      crystal_mauler_free_288x128_SpriteSheet_159: 1877143917
+      crystal_mauler_free_288x128_SpriteSheet_16: -675588089
+      crystal_mauler_free_288x128_SpriteSheet_160: 1734765632
+      crystal_mauler_free_288x128_SpriteSheet_161: 578229143
+      crystal_mauler_free_288x128_SpriteSheet_162: 224982402
+      crystal_mauler_free_288x128_SpriteSheet_163: -1721441892
+      crystal_mauler_free_288x128_SpriteSheet_164: -475962112
+      crystal_mauler_free_288x128_SpriteSheet_165: -1640205871
+      crystal_mauler_free_288x128_SpriteSheet_166: -1334988643
+      crystal_mauler_free_288x128_SpriteSheet_167: -1208104557
+      crystal_mauler_free_288x128_SpriteSheet_168: -1719986078
+      crystal_mauler_free_288x128_SpriteSheet_169: -1917258033
+      crystal_mauler_free_288x128_SpriteSheet_17: 1461464245
+      crystal_mauler_free_288x128_SpriteSheet_170: 199945765
+      crystal_mauler_free_288x128_SpriteSheet_171: -1606129575
+      crystal_mauler_free_288x128_SpriteSheet_172: 1032182763
+      crystal_mauler_free_288x128_SpriteSheet_173: -646631343
+      crystal_mauler_free_288x128_SpriteSheet_174: 1259833721
+      crystal_mauler_free_288x128_SpriteSheet_175: 1598856863
+      crystal_mauler_free_288x128_SpriteSheet_176: -1015231851
+      crystal_mauler_free_288x128_SpriteSheet_177: -1134824456
+      crystal_mauler_free_288x128_SpriteSheet_178: 1881589418
+      crystal_mauler_free_288x128_SpriteSheet_179: 236059745
+      crystal_mauler_free_288x128_SpriteSheet_18: 1068939094
+      crystal_mauler_free_288x128_SpriteSheet_180: -1919445114
+      crystal_mauler_free_288x128_SpriteSheet_19: 1282167769
+      crystal_mauler_free_288x128_SpriteSheet_2: 705673022
+      crystal_mauler_free_288x128_SpriteSheet_20: -1206429089
+      crystal_mauler_free_288x128_SpriteSheet_21: 1867548115
+      crystal_mauler_free_288x128_SpriteSheet_22: 771006345
+      crystal_mauler_free_288x128_SpriteSheet_23: -877509663
+      crystal_mauler_free_288x128_SpriteSheet_24: -60434515
+      crystal_mauler_free_288x128_SpriteSheet_25: 480458679
+      crystal_mauler_free_288x128_SpriteSheet_26: -455437113
+      crystal_mauler_free_288x128_SpriteSheet_27: -1513453025
+      crystal_mauler_free_288x128_SpriteSheet_28: 1118016556
+      crystal_mauler_free_288x128_SpriteSheet_29: 970334560
+      crystal_mauler_free_288x128_SpriteSheet_3: -1391456763
+      crystal_mauler_free_288x128_SpriteSheet_30: -877981500
+      crystal_mauler_free_288x128_SpriteSheet_31: -1402014196
+      crystal_mauler_free_288x128_SpriteSheet_32: -631136039
+      crystal_mauler_free_288x128_SpriteSheet_33: 1991203561
+      crystal_mauler_free_288x128_SpriteSheet_34: 1156012560
+      crystal_mauler_free_288x128_SpriteSheet_35: -578060220
+      crystal_mauler_free_288x128_SpriteSheet_36: -137068209
+      crystal_mauler_free_288x128_SpriteSheet_37: 89615284
+      crystal_mauler_free_288x128_SpriteSheet_38: -994470571
+      crystal_mauler_free_288x128_SpriteSheet_39: 44969002
+      crystal_mauler_free_288x128_SpriteSheet_4: -1288821573
+      crystal_mauler_free_288x128_SpriteSheet_40: 1932116509
+      crystal_mauler_free_288x128_SpriteSheet_41: 1895462072
+      crystal_mauler_free_288x128_SpriteSheet_42: 1304872805
+      crystal_mauler_free_288x128_SpriteSheet_43: 49861747
+      crystal_mauler_free_288x128_SpriteSheet_44: 942452200
+      crystal_mauler_free_288x128_SpriteSheet_45: -2120436303
+      crystal_mauler_free_288x128_SpriteSheet_46: 949573150
+      crystal_mauler_free_288x128_SpriteSheet_47: -1096350221
+      crystal_mauler_free_288x128_SpriteSheet_48: -1044475314
+      crystal_mauler_free_288x128_SpriteSheet_49: 357548293
+      crystal_mauler_free_288x128_SpriteSheet_5: -1269579611
+      crystal_mauler_free_288x128_SpriteSheet_50: -214525346
+      crystal_mauler_free_288x128_SpriteSheet_51: -1714783929
+      crystal_mauler_free_288x128_SpriteSheet_52: -1224524244
+      crystal_mauler_free_288x128_SpriteSheet_53: -135534158
+      crystal_mauler_free_288x128_SpriteSheet_54: -320784584
+      crystal_mauler_free_288x128_SpriteSheet_55: 1069551723
+      crystal_mauler_free_288x128_SpriteSheet_56: -1704671044
+      crystal_mauler_free_288x128_SpriteSheet_57: -1550579588
+      crystal_mauler_free_288x128_SpriteSheet_58: 2087199484
+      crystal_mauler_free_288x128_SpriteSheet_59: 1578536058
+      crystal_mauler_free_288x128_SpriteSheet_6: -102744270
+      crystal_mauler_free_288x128_SpriteSheet_60: 596900468
+      crystal_mauler_free_288x128_SpriteSheet_61: -352858512
+      crystal_mauler_free_288x128_SpriteSheet_62: 1695331657
+      crystal_mauler_free_288x128_SpriteSheet_63: 2012087781
+      crystal_mauler_free_288x128_SpriteSheet_64: -2134406416
+      crystal_mauler_free_288x128_SpriteSheet_65: -736303607
+      crystal_mauler_free_288x128_SpriteSheet_66: 2074120569
+      crystal_mauler_free_288x128_SpriteSheet_67: -1130415355
+      crystal_mauler_free_288x128_SpriteSheet_68: -1942935476
+      crystal_mauler_free_288x128_SpriteSheet_69: 1820394425
+      crystal_mauler_free_288x128_SpriteSheet_7: 1362801732
+      crystal_mauler_free_288x128_SpriteSheet_70: -786558555
+      crystal_mauler_free_288x128_SpriteSheet_71: 1796761353
+      crystal_mauler_free_288x128_SpriteSheet_72: 490404109
+      crystal_mauler_free_288x128_SpriteSheet_73: 1455745827
+      crystal_mauler_free_288x128_SpriteSheet_74: 891112051
+      crystal_mauler_free_288x128_SpriteSheet_75: 1341636550
+      crystal_mauler_free_288x128_SpriteSheet_76: -906787322
+      crystal_mauler_free_288x128_SpriteSheet_77: -395923618
+      crystal_mauler_free_288x128_SpriteSheet_78: 102460705
+      crystal_mauler_free_288x128_SpriteSheet_79: 1599783750
+      crystal_mauler_free_288x128_SpriteSheet_8: -1469532041
+      crystal_mauler_free_288x128_SpriteSheet_80: 1488353891
+      crystal_mauler_free_288x128_SpriteSheet_81: 848858570
+      crystal_mauler_free_288x128_SpriteSheet_82: 1915090026
+      crystal_mauler_free_288x128_SpriteSheet_83: 1490456854
+      crystal_mauler_free_288x128_SpriteSheet_84: -1526599625
+      crystal_mauler_free_288x128_SpriteSheet_85: 158742746
+      crystal_mauler_free_288x128_SpriteSheet_86: -128382161
+      crystal_mauler_free_288x128_SpriteSheet_87: -1751248038
+      crystal_mauler_free_288x128_SpriteSheet_88: -1078435492
+      crystal_mauler_free_288x128_SpriteSheet_89: -2064291582
+      crystal_mauler_free_288x128_SpriteSheet_9: -481205107
+      crystal_mauler_free_288x128_SpriteSheet_90: 1608077730
+      crystal_mauler_free_288x128_SpriteSheet_91: -1541931383
+      crystal_mauler_free_288x128_SpriteSheet_92: -1946090051
+      crystal_mauler_free_288x128_SpriteSheet_93: 366139006
+      crystal_mauler_free_288x128_SpriteSheet_94: 331663380
+      crystal_mauler_free_288x128_SpriteSheet_95: -509369756
+      crystal_mauler_free_288x128_SpriteSheet_96: -1665342883
+      crystal_mauler_free_288x128_SpriteSheet_97: 2128537445
+      crystal_mauler_free_288x128_SpriteSheet_98: 2015756018
+      crystal_mauler_free_288x128_SpriteSheet_99: 626262143
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
