@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &261722377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2167431424064288406, guid: 6801e4eeeb6c98549846ac46776fe96f, type: 3}
+  m_PrefabInstance: {fileID: 1684521285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &279122876
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,8 +948,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05443a0c021b11343ac50308a195ec12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  LastAttackTime: 0
+  _refPoint: {fileID: 0}
   jumpForce: 7
   movementSpeed: 5
+  maxVelocity: {x: 10, y: 10}
+  comboInfo: {fileID: 11400000, guid: f735c5f5bdfc5a643b22682f5062583b, type: 2}
 --- !u!50 &534342837
 Rigidbody2D:
   serializedVersion: 4
@@ -1004,7 +1016,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5292021, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.63146067, y: 1.3774219}
   m_Direction: 0
 --- !u!212 &534342839
@@ -1086,24 +1098,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce203365250c7fa4082fd89649a8c8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dmgPercentage: {fileID: 0}
   _maxLife: 100
---- !u!1 &557839300 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 437982750426497276, guid: 6801e4eeeb6c98549846ac46776fe96f, type: 3}
-  m_PrefabInstance: {fileID: 1684521285}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &557839301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 557839300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d96793043602514cb86150be246515c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _resistance: 0.8
 --- !u!1 &1010155654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 2184287205391039716, guid: 6801e4eeeb6c98549846ac46776fe96f, type: 3}
+      propertyPath: m_Name
+      value: RefPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 7601632362507374738, guid: 6801e4eeeb6c98549846ac46776fe96f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.8507867
@@ -1473,13 +1474,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8385248253869436373, guid: 6801e4eeeb6c98549846ac46776fe96f, type: 3}
+      propertyPath: _hitBox
+      value: 
+      objectReference: {fileID: 261722377}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 437982750426497276, guid: 6801e4eeeb6c98549846ac46776fe96f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 557839301}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6801e4eeeb6c98549846ac46776fe96f, type: 3}
 --- !u!1 &1884598957
 GameObject:

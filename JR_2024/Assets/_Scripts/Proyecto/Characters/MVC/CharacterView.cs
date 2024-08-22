@@ -21,11 +21,17 @@ public class CharacterView : MonoBehaviour
 
     public void RunAnim(Vector2 dir)
     {
-        if (dir.x != 0)
+        if (dir.x < 0)
         {
             _anim.SetBool("isMoving", true);
+            _character.transform.localScale = new Vector3(-1, 1, 0); 
         }
-        else
+        else if(dir.x > 0)
+        {
+            _anim.SetBool("isMoving", true);
+            _character.transform.localScale = new Vector3(1, 1, 0);
+        }
+        else if(dir.x == 0)
         {
             _anim.SetBool("isMoving", false);
         }

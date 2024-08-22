@@ -15,9 +15,12 @@ public class Character : MonoBehaviour
 
                 //VARIABLES
     //Combat
-    [SerializeField] LayerMask targetLayer;
+    [SerializeField] LayerMask _targetLayer;
     [HideInInspector] public float LastAttackTime;
     private int _lastComboAttack;
+    public Transform RefPoint => _refPoint;
+    [SerializeField] Transform _refPoint;
+
     //Movement
     private float _hor;
     private bool _isGrounded;
@@ -25,10 +28,10 @@ public class Character : MonoBehaviour
 
                 //STATS
     [Header("STATS")]
-    [SerializeField] private float jumpForce;
-    [SerializeField] private float movementSpeed;
-    [SerializeField] private Vector2 maxVelocity;
-    [SerializeField] ComboInfo comboInfo;
+    [SerializeField] private float _jumpForce;
+    [SerializeField] private float _movementSpeed;
+    [SerializeField] private Vector2 _maxVelocity;
+    [SerializeField] ComboInfo _comboInfo;
 
     private void Start()
     {
@@ -58,15 +61,15 @@ public class Character : MonoBehaviour
     #region MOVEMENT
     private void Move()
     {
-        _rb.velocity = new Vector2(_hor * movementSpeed, _rb.velocity.y);
-        if(_rb.velocity.x > maxVelocity.x) _rb.velocity = new Vector2(maxVelocity.x, _rb.velocity.y);
-        if(_rb.velocity.y > maxVelocity.y) _rb.velocity = new Vector2(_rb.velocity.x, maxVelocity.y);
+        _rb.velocity = new Vector2(_hor * _movementSpeed, _rb.velocity.y);
+        if(_rb.velocity.x > _maxVelocity.x) _rb.velocity = new Vector2(_maxVelocity.x, _rb.velocity.y);
+        if(_rb.velocity.y > _maxVelocity.y) _rb.velocity = new Vector2(_rb.velocity.x, _maxVelocity.y);
     }
 
     private void Jump()
     {
         _rb.velocity = new Vector2(_rb.velocity.x, 0);
-        _rb.AddForce(jumpForce * Vector2.up, ForceMode2D.Impulse);
+        _rb.AddForce(_jumpForce * Vector2.up, ForceMode2D.Impulse);
         if (!_isGrounded) _hasDoubleJump = false;
         _isGrounded = false;
     }
@@ -79,15 +82,15 @@ public class Character : MonoBehaviour
         int attack = SelectAttack();
         _lastComboAttack = attack;
         Debug.Log($"Attack: {attack}");
-        DealDamage(comboInfo.attacksDamage[attack], comboInfo.attacksRange[attack], comboInfo.attacksRadius[attack], comboInfo.attacksForce[attack]);
+        DealDamage(_comboInfo.attacksDamage[attack], _comboInfo.attacksRange[attack], _comboInfo.attacksRadius[attack], _comboInfo.attacksForce[attack]);
         LastAttackTime = Time.time;
     }
     private int SelectAttack()
     {
-        if (Time.time <= LastAttackTime + comboInfo.attacksTiming[_lastComboAttack])
+        if (Time.time <= LastAttackTime + _comboInfo.attacksTiming[_lastComboAttack])
         {
             _lastComboAttack++;
-            if (_lastComboAttack == comboInfo.attacksAmount) _lastComboAttack = 0;
+            if (_lastComboAttack == _comboInfo.attacksAmount) _lastComboAttack = 0;
             return _lastComboAttack;
         }
         else return 0;
@@ -95,13 +98,14 @@ public class Character : MonoBehaviour
 
     private void DealDamage(float damage, float range, float radius, float force)
     {
-        Collider2D[] victims = Physics2D.OverlapCircleAll((Vector2)transform.position + Vector2.right * transform.localScale.x * range, radius, targetLayer);
+        Collider2D[] victims = Physics2D.OverlapCircleAll((Vector2)_refPoint.position + Vector2.right * transform.localScale.x * range, radius, _targetLayer);
         foreach (Collider2D victim in victims)
         {
             if (victim.gameObject != gameObject)
             {
-                Debug.Log(force * (victim.transform.position - transform.position));
-                victim.GetComponent<Character>().GetDamage(damage, force * (victim.transform.position - transform.position));
+                Transform refPoint = victim.GetComponent<Character>().RefPoint;
+                //Debug.Log(force * (refPoint.position - _refPoint.position));
+                victim.GetComponent<Character>().GetDamage(damage, force * (refPoint.position - _refPoint.position));
             }
         }
     }
@@ -142,10 +146,10 @@ public class Character : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere((Vector2)transform.position + Vector2.right * transform.localScale.x * comboInfo.attacksRange[0], comboInfo.attacksRadius[0]);
+        Gizmos.DrawWireSphere((Vector2)_refPoint.position + Vector2.right * transform.localScale.x * _comboInfo.attacksRange[0], _comboInfo.attacksRadius[0]);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere((Vector2)transform.position + Vector2.right * transform.localScale.x * comboInfo.attacksRange[1], comboInfo.attacksRadius[1]);
+        Gizmos.DrawWireSphere((Vector2)_refPoint.position + Vector2.right * transform.localScale.x * _comboInfo.attacksRange[1], _comboInfo.attacksRadius[1]);
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.position + Vector2.right * transform.localScale.x * comboInfo.attacksRange[2], comboInfo.attacksRadius[2]);
+        Gizmos.DrawWireSphere((Vector2)_refPoint.position + Vector2.right * transform.localScale.x * _comboInfo.attacksRange[2], _comboInfo.attacksRadius[2]);
     }
 }
