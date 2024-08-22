@@ -948,15 +948,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05443a0c021b11343ac50308a195ec12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetLayer:
+  _targetLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   LastAttackTime: 0
   _refPoint: {fileID: 0}
-  jumpForce: 7
-  movementSpeed: 5
-  maxVelocity: {x: 10, y: 10}
-  comboInfo: {fileID: 11400000, guid: f735c5f5bdfc5a643b22682f5062583b, type: 2}
+  _jumpForce: 0
+  _movementSpeed: 0
+  _maxVelocity: {x: 0, y: 0}
+  _comboInfo: {fileID: 0}
 --- !u!50 &534342837
 Rigidbody2D:
   serializedVersion: 4
