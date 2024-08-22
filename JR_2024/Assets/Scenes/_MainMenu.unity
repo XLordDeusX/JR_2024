@@ -5160,7 +5160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: UNTITLED GAME
+  m_text: ELEMENTAL COMBAT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f6afb50c04ea6ba4fb45a587612152aa, type: 2}
   m_sharedMaterial: {fileID: -3277618119602538209, guid: f6afb50c04ea6ba4fb45a587612152aa, type: 2}
@@ -5187,13 +5187,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 115.95
+  m_fontSize: 89.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 200
-  m_fontStyle: 5
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
