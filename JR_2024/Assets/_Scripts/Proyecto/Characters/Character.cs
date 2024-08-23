@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class Character : MonoBehaviour
     private Collider2D _collider;
     public LifeController LifeController => _lifeController;
     private LifeController _lifeController;
+    public PhotonView PV => _pv;
+    private PhotonView _pv;
 
                 //VARIABLES
     //Combat
@@ -40,8 +43,11 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        GetInput();
-        Move();
+        if(_pv.IsMine)
+        {
+            GetInput();
+            Move();
+        }
     }
 
     private void GetComponents()
@@ -49,6 +55,7 @@ public class Character : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _collider = GetComponent<Collider2D>();
         _lifeController = GetComponent<LifeController>();
+        _pv = GetComponent<PhotonView>();
     }
 
     private void GetInput()

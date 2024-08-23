@@ -24,7 +24,7 @@ public class LifeController : MonoBehaviour
 
     private void Update()
     {
-        dmgPercentage.text = _damagePercentage.ToString();
+        //dmgPercentage.text = _damagePercentage.ToString();
     }
 
     public void UpdateLife(float lifeUpdate)
