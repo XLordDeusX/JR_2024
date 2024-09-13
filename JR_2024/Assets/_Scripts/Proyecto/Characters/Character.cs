@@ -4,6 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
 
+
+public enum CharacterState
+{
+    Spawning,
+    Ready,
+    OutOfFight,
+}
+
 public class Character : MonoBehaviour
 {
                 //COMPONENTS
@@ -11,6 +19,8 @@ public class Character : MonoBehaviour
     private Rigidbody2D _rb;
     public Collider2D Collider => _collider;
     private Collider2D _collider;
+    private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
     public LifeController LifeController => _lifeController;
     private LifeController _lifeController;
     public PhotonView PV => _pv;
@@ -23,6 +33,22 @@ public class Character : MonoBehaviour
     private int _lastComboAttack;
     public Transform RefPoint => _refPoint;
     [SerializeField] Transform _refPoint;
+    public int Team => _team;
+    private int _team;
+
+    private Color teamColor;
+
+    private CharacterState currentState;
+
+    public void SetTeam(int newTeam)
+    {
+        _team = newTeam;
+        if (_team == 1) teamColor = Color.red;
+        else teamColor = Color.blue;
+        _spriteRenderer.color = teamColor;
+    }
+
+    public void SetState(CharacterState newState) => currentState = newState;
 
     //Movement
     private float _hor;
@@ -36,14 +62,14 @@ public class Character : MonoBehaviour
     [SerializeField] private Vector2 _maxVelocity;
     [SerializeField] ComboInfo _comboInfo;
 
-    private void Start()
+    private void Awake()
     {
         GetComponents();
     }
 
     private void Update()
     {
-        if(_pv.IsMine)
+        if(currentState == CharacterState.Ready && _pv.IsMine)
         {
             GetInput();
             Move();
@@ -54,6 +80,8 @@ public class Character : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _collider = GetComponent<Collider2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
         _lifeController = GetComponent<LifeController>();
         _pv = GetComponent<PhotonView>();
     }
@@ -129,6 +157,17 @@ public class Character : MonoBehaviour
         _rb.AddForce(push * _lifeController.DamagePercentage);
         _lifeController.UpdateLife(-damageTaken);
         Debug.Log($"Took damage: {damageTaken}");
+    }
+
+    public IEnumerator Respawn()
+    {
+        _animator.SetBool("isSpawning", true);
+        _rb.simulated = false;
+        SetState(CharacterState.Spawning);
+        yield return new WaitForSeconds(2f);
+        _animator.SetBool("isSpawning", false);
+        _rb.simulated = true;
+        SetState(CharacterState.Ready);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

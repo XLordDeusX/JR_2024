@@ -37,7 +37,6 @@ public class MenuUI : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("aaaa");
         PhotonNetwork.LoadLevel("TestRoom");
     }
 }
