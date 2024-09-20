@@ -14,6 +14,7 @@ public class MatchManager : MonoBehaviour
 
     private float startTime;
     [SerializeField] float matchTime;
+    public bool IsStarted => isStarted;
     private bool isStarted;
 
     [SerializeField] Transform[] _spawnpoints;
