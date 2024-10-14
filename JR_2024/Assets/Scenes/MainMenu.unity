@@ -1057,6 +1057,7 @@ GameObject:
   - component: {fileID: 375521788}
   - component: {fileID: 375521787}
   - component: {fileID: 375521786}
+  - component: {fileID: 375521790}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1151,6 +1152,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &375521790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375521785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c9596d1ef64ad469badd78dfc98700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createButton: {fileID: 683339140}
+  joinButton: {fileID: 433057898}
+  createInput: {fileID: 1619165459}
+  joinInput: {fileID: 866349750}
 --- !u!1 &383401229
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,22 +6942,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4618204029665344466, guid: 8962b658526e0cd478d6ca2ce52d5775, type: 3}
-      propertyPath: joinInput
-      value: 
-      objectReference: {fileID: 866349750}
-    - target: {fileID: 4618204029665344466, guid: 8962b658526e0cd478d6ca2ce52d5775, type: 3}
-      propertyPath: joinButton
-      value: 
-      objectReference: {fileID: 433057898}
-    - target: {fileID: 4618204029665344466, guid: 8962b658526e0cd478d6ca2ce52d5775, type: 3}
-      propertyPath: createInput
-      value: 
-      objectReference: {fileID: 1619165459}
-    - target: {fileID: 4618204029665344466, guid: 8962b658526e0cd478d6ca2ce52d5775, type: 3}
-      propertyPath: createButton
-      value: 
-      objectReference: {fileID: 683339140}
     - target: {fileID: 5629737708784957611, guid: 8962b658526e0cd478d6ca2ce52d5775, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1002.53564
