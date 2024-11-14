@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Button rematchButton;
     [SerializeField] Button mainMenuButton;
 
-    private MatchManager matchManager;
+    public MatchManager MatchManager;
 
     private void Awake()
     {
@@ -51,17 +51,16 @@ public class GameManager : MonoBehaviour
 
     public void AddPlayer(Character newPlayer)
     {
-        if (PhotonNetwork.IsMasterClient) FindObjectOfType<MatchManager>().GetNewPlayer(newPlayer);
+        if (PhotonNetwork.IsMasterClient) MatchManager.GetNewPlayer(newPlayer);
     }
     
     public void StartMatch()
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            matchManager = PhotonNetwork.Instantiate("MatchManager", Vector3.zero, Quaternion.identity).GetPhotonView().gameObject.GetComponent<MatchManager>();
-            matchManager.SetCam(PhotonNetwork.Instantiate("Camera", new Vector3(0, 0, -10), Quaternion.identity).GetPhotonView().gameObject.GetComponent<CameraScript>());
-            Debug.Log("aaa");
-        }
+        //if (PhotonNetwork.IsMasterClient)
+        //{
+        //    matchManager = PhotonNetwork.Instantiate("MatchManager", Vector3.zero, Quaternion.identity).GetPhotonView().gameObject.GetComponent<MatchManager>();
+        //    Debug.Log("aaa");
+        //}
     }
 
     public void EndMatch()

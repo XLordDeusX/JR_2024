@@ -21,6 +21,8 @@ public class PlayerSpawn : MonoBehaviour
         playerIndex = PhotonNetwork.CurrentRoom.PlayerCount;
 
         pv.RPC("AssignTeam", RpcTarget.AllBuffered);
+
+        GameManager.Instance.AddPlayer(player.GetComponent<Character>());
     }
 
     [PunRPC]

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    [SerializeField] MatchManager matchManager;
+    [SerializeField] MatchManager MatchManager;
     [SerializeField] LevelCenter FocusLevel;
     public List<GameObject> Players;
     public float DepthUpdateSpeed = 5f;
@@ -26,12 +26,11 @@ public class CameraScript : MonoBehaviour
     public void Start()
     {
         Players = new List<GameObject>();
-        FocusLevel = FindObjectOfType<LevelCenter>();
     }
 
     private void LateUpdate()
     {
-        if(matchManager != null && matchManager.IsStarted)
+        if(MatchManager != null && MatchManager.IsStarted)
         {
             CalculateCameraLocations();
             MoveCamera();

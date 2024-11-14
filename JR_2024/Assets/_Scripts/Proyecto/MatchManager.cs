@@ -27,7 +27,7 @@ public class MatchManager : MonoBehaviour
     {
         if (!PhotonNetwork.IsMasterClient) Destroy(gameObject);
         instance = this;
-
+        GameManager.Instance.MatchManager = this;
     }
 
     private void Update()
