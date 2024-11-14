@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using Photon.Pun;
 
 public class MatchManager : MonoBehaviour
 {
+    public static MatchManager instance;
     private List<Character> players = new List<Character>();
     private List<Character> team1Members = new List<Character>();
     private List<Character> team2Members = new List<Character>();
@@ -17,8 +19,16 @@ public class MatchManager : MonoBehaviour
     public bool IsStarted => isStarted;
     private bool isStarted;
 
-    [SerializeField] Transform[] _spawnpoints;
+    private List<Transform> _spawnpoints => new List<Transform>();
     [SerializeField] CameraScript cam;
+
+
+    private void Awake()
+    {
+        if (!PhotonNetwork.IsMasterClient) Destroy(gameObject);
+        instance = this;
+
+    }
 
     private void Update()
     {
@@ -26,8 +36,10 @@ public class MatchManager : MonoBehaviour
         {
             if(Time.time >= startTime + matchTime) EndMatch(false);
         }
-        else if (playersPerTeam * 2 == team1Members.Count + team2Members.Count) SetMatch();
+        else if (playersPerTeam * 2 == PhotonNetwork.CurrentRoom.PlayerCount) SetMatch();
     }
+
+    public void SetCam(CameraScript newCam) => cam = newCam;
 
     public void SetMatch()
     {
@@ -38,6 +50,9 @@ public class MatchManager : MonoBehaviour
         team2Score = 0;
         startTime = Time.time;
         isStarted = true;
+        _spawnpoints.Clear();
+        foreach (GameObject sp in GameObject.FindGameObjectsWithTag("Spawnpoint"))
+            _spawnpoints.Add(sp.transform);
     }
 
     public void GetNewPlayer(Character newPlayer)

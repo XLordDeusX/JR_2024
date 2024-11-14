@@ -1,4 +1,5 @@
 using Photon.Pun;
+using Photon.Pun.Demo.Cockpit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +26,8 @@ public class Character : MonoBehaviour
     private LifeController _lifeController;
     public PhotonView PV => _pv;
     private PhotonView _pv;
+
+    
 
                 //VARIABLES
     //Combat

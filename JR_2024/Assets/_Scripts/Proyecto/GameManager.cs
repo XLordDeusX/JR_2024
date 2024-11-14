@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject fighTextGO;
     [SerializeField] Button rematchButton;
     [SerializeField] Button mainMenuButton;
+
+    private MatchManager matchManager;
 
     private void Awake()
     {
@@ -44,6 +47,21 @@ public class GameManager : MonoBehaviour
     public void GetComponents()
     {
         _sceneManager = GetComponent<SceneManagerScript>();
+    }
+
+    public void AddPlayer(Character newPlayer)
+    {
+        if (PhotonNetwork.IsMasterClient) FindObjectOfType<MatchManager>().GetNewPlayer(newPlayer);
+    }
+    
+    public void StartMatch()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            matchManager = PhotonNetwork.Instantiate("MatchManager", Vector3.zero, Quaternion.identity).GetPhotonView().gameObject.GetComponent<MatchManager>();
+            matchManager.SetCam(PhotonNetwork.Instantiate("Camera", new Vector3(0, 0, -10), Quaternion.identity).GetPhotonView().gameObject.GetComponent<CameraScript>());
+            Debug.Log("aaa");
+        }
     }
 
     public void EndMatch()
