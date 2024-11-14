@@ -19,10 +19,6 @@ public class CameraScript : MonoBehaviour
     private float CameraEulerX;
     private Vector3 CameraPosition;
 
-    private void Awake()
-    {
-        if (!PhotonNetwork.IsMasterClient) Destroy(gameObject);
-    }
     public void Start()
     {
         Players = new List<GameObject>();
