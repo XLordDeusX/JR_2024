@@ -21,7 +21,7 @@ public class CameraScript : MonoBehaviour
 
     public void Start()
     {
-        Players = new List<GameObject>();
+        //Players = new List<GameObject>();
     }
 
     private void LateUpdate()

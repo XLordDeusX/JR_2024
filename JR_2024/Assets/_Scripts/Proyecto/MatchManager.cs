@@ -5,7 +5,6 @@ using Photon.Pun;
 
 public class MatchManager : MonoBehaviour
 {
-    public static MatchManager instance;
     private List<Character> players = new List<Character>();
     private List<Character> team1Members = new List<Character>();
     private List<Character> team2Members = new List<Character>();
@@ -23,12 +22,10 @@ public class MatchManager : MonoBehaviour
     [SerializeField] CameraScript cam;
 
 
-    private void Awake()
-    {
-        if (!PhotonNetwork.IsMasterClient) Destroy(gameObject);
-        instance = this;
-        GameManager.Instance.MatchManager = this;
-    }
+    //private void Awake()
+    //{
+    //    GameManager.Instance.MatchManager = this;
+    //}
 
     private void Update()
     {

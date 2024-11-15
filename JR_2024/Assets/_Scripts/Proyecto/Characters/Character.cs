@@ -45,6 +45,7 @@ public class Character : MonoBehaviour
 
     public void SetTeam(int newTeam)
     {
+        Debug.Log($"Team: {newTeam}");
         _team = newTeam;
         if (_team == 1) teamColor = Color.red;
         else teamColor = Color.blue;

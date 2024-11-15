@@ -19,11 +19,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] Button mainMenuButton;
 
     public MatchManager MatchManager;
+    public PhotonView PV => _pv;
+    private PhotonView _pv;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
 
         GetComponents();
@@ -47,20 +48,7 @@ public class GameManager : MonoBehaviour
     public void GetComponents()
     {
         _sceneManager = GetComponent<SceneManagerScript>();
-    }
-
-    public void AddPlayer(Character newPlayer)
-    {
-        if (PhotonNetwork.IsMasterClient) MatchManager.GetNewPlayer(newPlayer);
-    }
-    
-    public void StartMatch()
-    {
-        //if (PhotonNetwork.IsMasterClient)
-        //{
-        //    matchManager = PhotonNetwork.Instantiate("MatchManager", Vector3.zero, Quaternion.identity).GetPhotonView().gameObject.GetComponent<MatchManager>();
-        //    Debug.Log("aaa");
-        //}
+        _pv = GetComponent<PhotonView>();
     }
 
     public void EndMatch()

@@ -37,7 +37,6 @@ public class MenuUI : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        if(PhotonNetwork.IsMasterClient) GameManager.Instance.StartMatch();
         PhotonNetwork.LoadLevel("TestRoom");
     }
 }
