@@ -18,7 +18,7 @@ public class MatchManager : MonoBehaviour
     public bool IsStarted => isStarted;
     private bool isStarted;
 
-    private List<Transform> _spawnpoints => new List<Transform>();
+    [SerializeField] List<Transform> _spawnpoints => new List<Transform>();
     [SerializeField] CameraScript cam;
 
 
@@ -55,6 +55,7 @@ public class MatchManager : MonoBehaviour
     public void GetNewPlayer(Character newPlayer)
     {
         players.Add(newPlayer);
+        cam.Players.Add(newPlayer.gameObject);
         newPlayer.SetState(CharacterState.Ready);
         AsignTeam(newPlayer);
     }
