@@ -21,6 +21,12 @@ public class MatchManager : MonoBehaviour
     private bool isStarted;
 
     [SerializeField] CameraScript cam;
+    [SerializeField] HUD hud;
+
+    private void Awake()
+    {
+        GameManager.Instance.MatchManager = this;
+    }
 
     private void Update()
     {
@@ -47,6 +53,7 @@ public class MatchManager : MonoBehaviour
     public void GetNewPlayer(Character newPlayer)
     {
         players.Add(newPlayer);
+        hud.AddPlayer(newPlayer);
         cam.Players.Add(newPlayer.gameObject);
         newPlayer.SetState(CharacterState.Ready);
         AsignTeam(newPlayer);

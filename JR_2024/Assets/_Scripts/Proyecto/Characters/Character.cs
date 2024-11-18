@@ -40,6 +40,8 @@ public class Character : MonoBehaviour
     private int _team;
 
     private Color teamColor;
+    public string Nickname => _nickname;
+    private string _nickname;
 
     private CharacterState currentState;
 
@@ -143,7 +145,7 @@ public class Character : MonoBehaviour
             if (victim.gameObject != gameObject)
             {
                 Transform refPoint = victim.GetComponent<Character>().RefPoint;
-                //Debug.Log(force * (refPoint.position - _refPoint.position));
+                Debug.Log(force * (refPoint.position - _refPoint.position));
                 victim.GetComponent<Character>().GetDamage(damage, force * (refPoint.position - _refPoint.position));
             }
         }
@@ -158,8 +160,7 @@ public class Character : MonoBehaviour
 
     public void GetDamage(float damageTaken, Vector2 push)
     {
-        _rb.AddForce(push * _lifeController.DamagePercentage);
-        _lifeController.UpdateLife(-damageTaken);
+        _lifeController.GetDamage(-damageTaken, push);
         Debug.Log($"Took damage: {damageTaken}");
     }
 
