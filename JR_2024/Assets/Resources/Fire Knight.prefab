@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce203365250c7fa4082fd89649a8c8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _pv: {fileID: 4842615819262495545}
   _rb: {fileID: 1221540834864857364}
   _resistance: 0.8
 --- !u!114 &260421551447122009
@@ -266,7 +267,7 @@ MonoBehaviour:
     SynchronizeEnabled: 1
     TeleportEnabled: 1
     TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 3
+    InterpolateOption: 2
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 1
     ExtrapolateOption: 0
@@ -290,7 +291,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437982750426497276}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
   m_Name: 

@@ -22,8 +22,8 @@ public class Character : MonoBehaviour
     private Collider2D _collider;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
-    public LifeController LifeController => _lifeController;
-    private LifeController _lifeController;
+    public DamageController LifeController => _lifeController;
+    private DamageController _lifeController;
     public PhotonView PV => _pv;
     private PhotonView _pv;
 
@@ -78,7 +78,7 @@ public class Character : MonoBehaviour
         if(currentState == CharacterState.Ready && _pv.IsMine)
         {
             GetInput();
-            Move();
+            _pv.RPC("Move", RpcTarget.AllBuffered);
         }
     }
 
@@ -88,25 +88,28 @@ public class Character : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
-        _lifeController = GetComponent<LifeController>();
+        _lifeController = GetComponent<DamageController>();
         _pv = GetComponent<PhotonView>();
     }
 
     private void GetInput()
     {
         _hor = Input.GetAxis("Horizontal");
-        if ((_hasDoubleJump || _isGrounded) && Input.GetKeyDown(KeyCode.Space)) Jump();
-        if (Input.GetMouseButtonDown(0)) Attack();
+        if ((_hasDoubleJump || _isGrounded) && Input.GetKeyDown(KeyCode.Space)) _pv.RPC("Jump", RpcTarget.AllBuffered);
+        if (Input.GetMouseButtonDown(0)) _pv.RPC("Attack", RpcTarget.AllBuffered);
     }
 
     #region MOVEMENT
+    [PunRPC]
     private void Move()
     {
-        _rb.velocity = new Vector2(_hor * _movementSpeed, _rb.velocity.y);
+
+        if(_hor != 0) _rb.velocity = new Vector2(_hor * _movementSpeed, _rb.velocity.y);
         if(_rb.velocity.x > _maxVelocity.x) _rb.velocity = new Vector2(_maxVelocity.x, _rb.velocity.y);
         if(_rb.velocity.y > _maxVelocity.y) _rb.velocity = new Vector2(_rb.velocity.x, _maxVelocity.y);
     }
 
+    [PunRPC]
     private void Jump()
     {
         _rb.velocity = new Vector2(_rb.velocity.x, 0);
@@ -118,6 +121,7 @@ public class Character : MonoBehaviour
 
     #region COMBAT
 
+    [PunRPC]
     private void Attack()
     {
         int attack = SelectAttack();
@@ -146,28 +150,17 @@ public class Character : MonoBehaviour
             {
                 Transform refPoint = victim.GetComponent<Character>().RefPoint;
                 Debug.Log(force * (refPoint.position - _refPoint.position));
-                victim.GetComponent<Character>().GetDamage(damage, force * (refPoint.position - _refPoint.position));
+                victim.GetComponent<DamageController>().GetDamage(damage, force * (refPoint.position - _refPoint.position));
             }
         }
     }
 #endregion
 
-    public void GetDamage(float damageTaken)
-    {
-        _lifeController.UpdateLife(-damageTaken);
-        Debug.Log($"Took damage: {damageTaken}");
-    }
-
-    public void GetDamage(float damageTaken, Vector2 push)
-    {
-        _lifeController.GetDamage(-damageTaken, push);
-        Debug.Log($"Took damage: {damageTaken}");
-    }
-
     public IEnumerator Respawn()
     {
         _animator.SetBool("isSpawning", true);
         _rb.simulated = false;
+        _rb.velocity = Vector2.zero;
         SetState(CharacterState.Spawning);
         yield return new WaitForSeconds(2f);
         _animator.SetBool("isSpawning", false);

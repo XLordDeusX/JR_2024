@@ -11,7 +11,7 @@ public class UIInfo : MonoBehaviour
     [SerializeField] TextMeshProUGUI damagePercentage;
     [SerializeField] Image damageFill;
 
-    LifeController LC;
+    DamageController LC;
 
     public void SetValues(Character character)
     {
