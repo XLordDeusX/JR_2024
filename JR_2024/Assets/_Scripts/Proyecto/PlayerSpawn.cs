@@ -36,7 +36,6 @@ public class PlayerSpawn : MonoBehaviour
         if(playerPV != null) 
         {
             FindObjectOfType<MatchManager>().GetNewPlayer(playerPV.gameObject.GetComponent<Character>());
-
         }
     }
 }

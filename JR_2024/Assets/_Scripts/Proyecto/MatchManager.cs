@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using Photon.Pun;
+using Unity.VisualScripting;
+using System.Linq;
 
 public class MatchManager : MonoBehaviour
 {
@@ -18,14 +20,7 @@ public class MatchManager : MonoBehaviour
     public bool IsStarted => isStarted;
     private bool isStarted;
 
-    [SerializeField] List<Transform> _spawnpoints => new List<Transform>();
     [SerializeField] CameraScript cam;
-
-
-    //private void Awake()
-    //{
-    //    GameManager.Instance.MatchManager = this;
-    //}
 
     private void Update()
     {
@@ -33,7 +28,7 @@ public class MatchManager : MonoBehaviour
         {
             if(Time.time >= startTime + matchTime) EndMatch(false);
         }
-        else if (playersPerTeam * 2 == PhotonNetwork.CurrentRoom.PlayerCount) SetMatch();
+        else if (playersPerTeam * 2 == players.Count) SetMatch();
     }
 
     public void SetCam(CameraScript newCam) => cam = newCam;
@@ -42,14 +37,11 @@ public class MatchManager : MonoBehaviour
     {
         StartCoroutine(GameManager.Instance.SetGameplayUI());
         cam.Start();
-        SpawnPlayers();
         team1Score = 0;
         team2Score = 0;
         startTime = Time.time;
         isStarted = true;
-        _spawnpoints.Clear();
-        foreach (GameObject sp in GameObject.FindGameObjectsWithTag("Spawnpoint"))
-            _spawnpoints.Add(sp.transform);
+        SpawnPlayers();
     }
 
     public void GetNewPlayer(Character newPlayer)
@@ -62,18 +54,28 @@ public class MatchManager : MonoBehaviour
 
     private void SpawnPlayers()
     {
-        foreach(Character player in players)
+        for (int n = 0; n < players.Count; n++)
         {
-            cam.Players.Add(player.gameObject);
-            RespawnPlayer(player.gameObject);
+            cam.Players.Add(players[n].gameObject);
+            RespawnPlayer(players[n].gameObject, GameObject.FindGameObjectsWithTag("Spawnpoint")[n].transform);
         }
     }
 
     public void RespawnPlayer(GameObject playerToRespawn)
     {
         Character player = playerToRespawn.GetComponent<Character>();
-        int i = players.IndexOf(player);
-        playerToRespawn.transform.SetPositionAndRotation(_spawnpoints[i].position, Quaternion.identity);
+        GameObject[] tGO = GameObject.FindGameObjectsWithTag("Spawnpoint");
+        Transform t = tGO[Random.Range(0, tGO.Length)].transform;
+
+        playerToRespawn.transform.SetPositionAndRotation(t.position, t.rotation);
+        StartCoroutine(player.Respawn());
+    }
+
+    public void RespawnPlayer(GameObject playerToRespawn, Transform t)
+    {
+        Character player = playerToRespawn.GetComponent<Character>();
+
+        playerToRespawn.transform.SetPositionAndRotation(t.position, t.rotation);
         StartCoroutine(player.Respawn());
     }
 
