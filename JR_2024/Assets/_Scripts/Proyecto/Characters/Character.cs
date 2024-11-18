@@ -43,6 +43,8 @@ public class Character : MonoBehaviour
     public string Nickname => _nickname;
     private string _nickname;
 
+    public void SetNickname(string newNickname) => _nickname = newNickname;
+
     private CharacterState currentState;
 
     public void SetTeam(int newTeam)

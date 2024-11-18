@@ -10,6 +10,7 @@ public class MenuUI : MonoBehaviourPunCallbacks
 
     [SerializeField] TMPro.TMP_InputField createInput;
     [SerializeField] TMPro.TMP_InputField joinInput;
+    [SerializeField] TMPro.TMP_InputField nicknameInput;
 
     private void Awake()
     {
@@ -37,6 +38,7 @@ public class MenuUI : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
+        PhotonNetwork.NickName = nicknameInput.text;
         PhotonNetwork.LoadLevel("TestRoom");
     }
 }

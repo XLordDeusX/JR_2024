@@ -5,7 +5,6 @@ public class PlayerSpawn : MonoBehaviour
 {
     [SerializeField] GameObject playerPrefab;
     PhotonView pv;
-    GameObject player;
 
 
     private void Start()
@@ -22,20 +21,30 @@ public class PlayerSpawn : MonoBehaviour
 
     public void CreatePlayer()
     {
-        player = PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
+        GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
 
-        int playerIndex = PhotonNetwork.CurrentRoom.PlayerCount;
 
-        pv.RPC("AssignTeam", RpcTarget.AllBuffered, player.GetComponent<PhotonView>().ViewID, playerIndex);
+        pv.RPC("SetNickname", RpcTarget.AllBuffered, player.GetComponent<PhotonView>().ViewID);
+        pv.RPC("AssignTeam", RpcTarget.AllBuffered, player.GetComponent<PhotonView>().ViewID);
     }
 
     [PunRPC]
-    private void AssignTeam(int playerViewID, int playerIndex)
+    private void AssignTeam(int photonViewID)
     {
-        PhotonView playerPV = PhotonView.Find(playerViewID);
-        if(playerPV != null) 
-        {
+        PhotonView playerPV = PhotonView.Find(photonViewID);
+        if(playerPV != null)
             FindObjectOfType<MatchManager>().GetNewPlayer(playerPV.gameObject.GetComponent<Character>());
+    }
+
+    [PunRPC]
+    private void SetNickname(int photonViewID)
+    {
+        PhotonView playerPV = PhotonView.Find(photonViewID);
+        if (playerPV != null)
+        {
+            Character character = playerPV.gameObject.GetComponent<Character>();
+            if (playerPV.IsMine) character.SetNickname(PhotonNetwork.NickName);
+            else character.SetNickname(playerPV.Owner.NickName);
         }
     }
 }
