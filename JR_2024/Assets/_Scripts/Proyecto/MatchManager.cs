@@ -16,6 +16,7 @@ public class MatchManager : MonoBehaviour
     [SerializeField] int playersPerTeam;
 
     private float startTime;
+    public float MatchTime => matchTime;
     [SerializeField] float matchTime;
     public bool IsStarted => isStarted;
     private bool isStarted;
@@ -32,7 +33,7 @@ public class MatchManager : MonoBehaviour
     {
         if (isStarted)
         {
-            if(Time.time >= startTime + matchTime) EndMatch(false);
+            if(PhotonNetwork.Time >= startTime + matchTime) EndMatch(false);
         }
         else if (playersPerTeam * 2 == players.Count) SetMatch();
     }
@@ -45,7 +46,8 @@ public class MatchManager : MonoBehaviour
         cam.Start();
         team1Score = 0;
         team2Score = 0;
-        startTime = Time.time;
+        startTime = (float)PhotonNetwork.Time;
+        hud.SetStartTime();
         isStarted = true;
         SpawnPlayers();
     }
