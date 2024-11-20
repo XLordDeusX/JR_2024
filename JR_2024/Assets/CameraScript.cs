@@ -1,11 +1,12 @@
+using Photon.Pun;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    private MatchManager matchManager;
-    public LevelCenter FocusLevel;
+    [SerializeField] MatchManager MatchManager;
+    [SerializeField] LevelCenter FocusLevel;
     public List<GameObject> Players;
     public float DepthUpdateSpeed = 5f;
     public float AngleUpdateSpeed = 7f;
@@ -20,13 +21,12 @@ public class CameraScript : MonoBehaviour
 
     public void Start()
     {
-        matchManager = FindObjectOfType<MatchManager>();
-        Players = new List<GameObject>();   
+        Players = new List<GameObject>();
     }
 
     private void LateUpdate()
     {
-        if(matchManager.IsStarted)
+        if(MatchManager != null && MatchManager.IsStarted)
         {
             CalculateCameraLocations();
             MoveCamera();

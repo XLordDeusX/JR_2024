@@ -8,6 +8,7 @@ TagManager:
   - Spikes
   - Character
   - Limits
+  - Spawnpoint
   layers:
   - Default
   - TransparentFX

@@ -42,6 +42,14 @@ MonoBehaviour:
   - SetColor
   - InstantiatePlayer
   - SetPosition
+  - AssignTeam
+  - GetPushed
+  - Jump
+  - Move
+  - Attack
+  - GetInput
+  - SetNickname
+  - UpdateTimer
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
