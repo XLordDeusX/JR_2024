@@ -8,6 +8,6 @@ public class SpikesPlatform : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Character")
-            collision.gameObject.GetComponent<Character>().GetDamage(damage);
+            collision.gameObject.GetComponent<DamageController>().GetDamage(damage);
     }
 }

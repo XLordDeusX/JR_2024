@@ -18,7 +18,9 @@ GameObject:
   - component: {fileID: 260421551447122009}
   - component: {fileID: 4842615819262495545}
   - component: {fileID: -4188072671093738401}
-  m_Layer: 0
+  - component: {fileID: -3311877520548196344}
+  - component: {fileID: -6284959470572096794}
+  m_Layer: 6
   m_Name: Fire Knight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,8 +211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce203365250c7fa4082fd89649a8c8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmgPercentage: {fileID: 0}
-  _maxLife: 100
+  _pv: {fileID: 4842615819262495545}
+  _rb: {fileID: 1221540834864857364}
   _resistance: 0.8
 --- !u!114 &260421551447122009
 MonoBehaviour:
@@ -244,6 +246,8 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -4188072671093738401}
+  - {fileID: -3311877520548196344}
+  - {fileID: -6284959470572096794}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -271,15 +275,55 @@ MonoBehaviour:
     ExtrapolateIncludingRoundTripTime: 1
     ExtrapolateNumberOfStoredPositions: 1
   m_RotationModel:
-    SynchronizeEnabled: 1
+    SynchronizeEnabled: 0
     InterpolateOption: 1
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
   m_ScaleModel:
-    SynchronizeEnabled: 1
+    SynchronizeEnabled: 0
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &-3311877520548196344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437982750426497276}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 1
+  m_TeleportEnabled: 1
+  m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &-6284959470572096794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437982750426497276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: isMoving
+  - Type: 4
+    SynchronizeType: 1
+    Name: isSpawning
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &2184287205391039716
 GameObject:
   m_ObjectHideFlags: 0
