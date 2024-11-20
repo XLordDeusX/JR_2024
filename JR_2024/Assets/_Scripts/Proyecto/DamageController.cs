@@ -20,7 +20,7 @@ public class DamageController : MonoBehaviour
         _damagePercentage += damageUpdate * (1 - _resistance)/10;
     }
 
-    public void GetDamage(float damageUpdate) => _damagePercentage += -damageUpdate * (1 - _resistance) / 10;
+    public void GetDamage(float damageUpdate) => _damagePercentage += damageUpdate * (1 - _resistance) / 10;
 
     [PunRPC]
     private void GetPushed(Vector2 push)
