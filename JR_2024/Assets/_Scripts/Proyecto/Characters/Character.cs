@@ -27,7 +27,7 @@ public class Character : MonoBehaviour
     public PhotonView PV => _pv;
     private PhotonView _pv;
 
-    
+    [SerializeField] private ParticleSystem _ps;
 
                 //VARIABLES
     //Combat
@@ -97,7 +97,11 @@ public class Character : MonoBehaviour
     private void GetInput()
     {
         _hor = Input.GetAxis("Horizontal");
-        if ((_hasDoubleJump || _isGrounded) && Input.GetKeyDown(KeyCode.Space)) _pv.RPC("Jump", RpcTarget.AllBuffered);
+        if ((_hasDoubleJump || _isGrounded) && Input.GetKeyDown(KeyCode.Space)) 
+        {
+            _pv.RPC("Jump", RpcTarget.AllBuffered);
+            _ps.Play();
+        }
         if (Input.GetMouseButtonDown(0)) _pv.RPC("Attack", RpcTarget.AllBuffered);
     }
 
