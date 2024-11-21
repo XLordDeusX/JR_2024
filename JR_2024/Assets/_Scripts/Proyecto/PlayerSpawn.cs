@@ -44,21 +44,21 @@ public class PlayerSpawn : MonoBehaviour
         {
             Character character = playerPV.gameObject.GetComponent<Character>();
 
-            //string nickname = CheckNickname(playerPV);
+            string nickname = CheckNickname();
 
-            if (playerPV.IsMine) character.SetNickname(PhotonNetwork.NickName);
+            if (playerPV.IsMine) character.SetNickname(nickname);
             else character.SetNickname(playerPV.Owner.NickName);
         }
     }
 
-    private void CheckNickname(PhotonView ownPV)
+    private string CheckNickname()
     {
-        //for (int n = 0; n < PhotonNetwork.PlayerList.Length; n++)
-        //    if (PhotonNetwork.GetPhotonView(PhotonNetwork.PlayerList[n].)  != ownPV && PhotonNetwork.PlayerList[n].NickName == PhotonNetwork.NickName)
-        //    {
-        //        PhotonNetwork.NickName = $"{PhotonNetwork.NickName}{Random.Range(1, GameManager.Instance.MatchManager.PlayersPerTeam*2)}";
-        //        CheckNickname();
-        //    }
-        //return PhotonNetwork.NickName;
+        for (int n = 0; n < PhotonNetwork.PlayerList.Length-1; n++)
+            if ( PhotonNetwork.PlayerList[n].NickName == PhotonNetwork.NickName)
+            {
+                PhotonNetwork.NickName = $"{PhotonNetwork.NickName}{Random.Range(1, GameManager.Instance.MatchManager.PlayersPerTeam * 2)}";
+                CheckNickname();
+            }
+        return PhotonNetwork.NickName;
     }
 }
