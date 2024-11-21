@@ -13,46 +13,37 @@ public class CharacterView : MonoBehaviour
         _character = GetComponent<Character>();
     }
 
-    
-    void Update()
+    public void RunAnim(float value)
     {
-        RunAnim(_character.RB.velocity);
-    }
-
-    public void RunAnim(Vector2 dir)
-    {
-        if (dir.x < 0)
+        if (value < 0)
         {
             _anim.SetBool("isMoving", true);
             _character.transform.localScale = new Vector3(-1, 1, 0); 
         }
-        else if(dir.x > 0)
+        else if(value > 0)
         {
             _anim.SetBool("isMoving", true);
             _character.transform.localScale = new Vector3(1, 1, 0);
         }
-        else if(dir.x == 0)
+        else if(value == 0)
         {
             _anim.SetBool("isMoving", false);
         }
     }
-
-    public void JumpAnim(bool action)
-    {
-        if (!action)
-        {
-            _anim.SetTrigger("OnJump");
-        }
-        else
-        {
-            _anim.SetTrigger("OnLand");
-        }
+    public void AttackAnim() { _anim.SetTrigger("Attack"); }
+    public void AttackAnim(int value)
+    {        
+        _anim.SetInteger("ComboCount", value + 1);
     }
+
+    public void JumpAnim() { _anim.SetTrigger("OnJump"); }
+
+    public void LandingAnim() { _anim.SetTrigger("OnLand"); }
 
     public void RespawnAnim(bool state)
     {
         if(state == true) _anim.SetBool("isSpawning", state);
-        else _anim.SetBool("isSpawning", !state);
+        else _anim.SetBool("isSpawning", state);
     }
 
 }

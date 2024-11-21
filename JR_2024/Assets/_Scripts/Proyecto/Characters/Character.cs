@@ -34,7 +34,7 @@ public class Character : MonoBehaviour
     //Combat
     [SerializeField] LayerMask _targetLayer;
     [HideInInspector] public float LastAttackTime;
-    private int _lastComboAttack;
+    [SerializeField] private int _lastComboAttack;
     public Transform RefPoint => _refPoint;
     [SerializeField] Transform _refPoint;
     public int Team => _team;
@@ -60,8 +60,8 @@ public class Character : MonoBehaviour
 
     //Movement
     private float _hor;
-    private bool _isGrounded;
-    private bool _hasDoubleJump;
+    [SerializeField] private bool _isGrounded;
+    [SerializeField] private bool _hasDoubleJump;
 
                 //STATS
     [Header("STATS")]
@@ -101,9 +101,14 @@ public class Character : MonoBehaviour
         if ((_hasDoubleJump || _isGrounded) && Input.GetKeyDown(KeyCode.Space)) 
         {
             _pv.RPC("Jump", RpcTarget.AllBuffered);
+            _charView.JumpAnim();
             _ps.Play();
         }
-        if (Input.GetMouseButtonDown(0)) _pv.RPC("Attack", RpcTarget.AllBuffered);
+        if (Input.GetMouseButtonDown(0))
+        {
+            _charView.AttackAnim();
+            _pv.RPC("Attack", RpcTarget.AllBuffered);
+        }
     }
 
     #region MOVEMENT
@@ -114,6 +119,7 @@ public class Character : MonoBehaviour
         if (_hor != 0) _rb.velocity = new Vector2(_hor * _movementSpeed, _rb.velocity.y);
         if(_rb.velocity.x > _maxVelocity.x) _rb.velocity = new Vector2(_maxVelocity.x, _rb.velocity.y);
         if(_rb.velocity.y > _maxVelocity.y) _rb.velocity = new Vector2(_rb.velocity.x, _maxVelocity.y);
+        _charView.RunAnim(_hor);
     }
 
     [PunRPC]
@@ -123,7 +129,6 @@ public class Character : MonoBehaviour
         _rb.AddForce(_jumpForce * Vector2.up, ForceMode2D.Impulse);
         if (!_isGrounded) _hasDoubleJump = false;
         _isGrounded = false;
-        
     }
     #endregion
 
@@ -136,6 +141,7 @@ public class Character : MonoBehaviour
         _lastComboAttack = attack;
         DealDamage(_comboInfo.attacksDamage[attack], _comboInfo.attacksRange[attack], _comboInfo.attacksRadius[attack], _comboInfo.attacksForce[attack]);
         LastAttackTime = Time.time;
+        _charView.AttackAnim(_lastComboAttack);
     }
     private int SelectAttack()
     {
@@ -183,11 +189,13 @@ public class Character : MonoBehaviour
             case "Ground":
                 _isGrounded = true;
                 _hasDoubleJump = true;
+                _charView.LandingAnim();
                 if (!_ps.isPlaying) _ps.Play();
                 break;
             case "Spikes":
                 _isGrounded = true;
                 _hasDoubleJump = true;
+                _charView.LandingAnim();
                 break;
             //case "Limits":
             //    GetDamage(_lifeController.CurrentLife);

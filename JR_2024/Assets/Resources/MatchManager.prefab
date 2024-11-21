@@ -47,7 +47,5 @@ MonoBehaviour:
   targetScore: 3
   playersPerTeam: 1
   matchTime: 30
-  _spawnpoints:
-  - {fileID: 0}
-  - {fileID: 0}
   cam: {fileID: 0}
+  hud: {fileID: 0}
