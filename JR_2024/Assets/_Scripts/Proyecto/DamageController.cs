@@ -26,6 +26,6 @@ public class DamageController : MonoBehaviour
     private void GetPushed(Vector2 push)
     {
         if (_damagePercentage < 1) push *= _damagePercentage;
-        _rb.AddForce(push);
+        _rb.AddForce(push, ForceMode2D.Impulse);
     }
 }

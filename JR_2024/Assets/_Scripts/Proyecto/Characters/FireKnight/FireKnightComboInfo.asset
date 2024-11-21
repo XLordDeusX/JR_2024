@@ -26,9 +26,9 @@ MonoBehaviour:
   - 1.25
   - 1.5
   attacksForce:
-  - 150
-  - 250
-  - 400
+  - 50
+  - 90
+  - 130
   attacksRadius:
   - 0.25
   - 0.35
