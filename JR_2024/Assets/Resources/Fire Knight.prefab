@@ -410,6 +410,18 @@ PrefabInstance:
       value: DustPS
       objectReference: {fileID: 0}
     - target: {fileID: 6910103958510072886, guid: 2612df9cc5dcc9f4c88e3e885f2861c9, type: 3}
+      propertyPath: SizeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910103958510072886, guid: 2612df9cc5dcc9f4c88e3e885f2861c9, type: 3}
+      propertyPath: ColorModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910103958510072886, guid: 2612df9cc5dcc9f4c88e3e885f2861c9, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910103958510072886, guid: 2612df9cc5dcc9f4c88e3e885f2861c9, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 5
       objectReference: {fileID: 0}
