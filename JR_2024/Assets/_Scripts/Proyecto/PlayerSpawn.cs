@@ -12,13 +12,6 @@ public class PlayerSpawn : MonoBehaviour
         pv = GetComponent<PhotonView>();
     }
 
-#if UNITY_EDITOR
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I)) CreatePlayer();
-    }
-#endif
-
     public void CreatePlayer()
     {
         GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, Vector3.zero, Quaternion.identity);
@@ -44,21 +37,21 @@ public class PlayerSpawn : MonoBehaviour
         {
             Character character = playerPV.gameObject.GetComponent<Character>();
 
-            string nickname = CheckNickname();
+            //string nickname = CheckNickname(photonViewID);
 
-            if (playerPV.IsMine) character.SetNickname(nickname);
+            if (playerPV.IsMine) character.SetNickname(PhotonNetwork.NickName);
             else character.SetNickname(playerPV.Owner.NickName);
         }
     }
 
-    private string CheckNickname()
-    {
-        for (int n = 0; n < PhotonNetwork.PlayerList.Length-1; n++)
-            if ( PhotonNetwork.PlayerList[n].NickName == PhotonNetwork.NickName)
-            {
-                PhotonNetwork.NickName = $"{PhotonNetwork.NickName}{Random.Range(1, GameManager.Instance.MatchManager.PlayersPerTeam * 2)}";
-                CheckNickname();
-            }
-        return PhotonNetwork.NickName;
-    }
+    //private string CheckNickname(int photonViewID)
+    //{
+    //    for (int n = 0; n < PhotonNetwork.PlayerList.Length-1; n++)
+    //        if (!PhotonNetwork.GetPhotonView(photonViewID).IsMine && PhotonNetwork.PlayerList[n].NickName == PhotonNetwork.NickName)
+    //        {
+    //            PhotonNetwork.NickName = $"{PhotonNetwork.NickName}{Random.Range(1, GameManager.Instance.MatchManager.PlayersPerTeam * 2)}";
+    //            return CheckNickname();
+    //        }
+    //    return PhotonNetwork.NickName;
+    //}
 }

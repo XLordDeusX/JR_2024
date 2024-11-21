@@ -22,6 +22,7 @@ public class MenuUI : MonoBehaviourPunCallbacks
     {
         createButton.onClick.AddListener(CreateRoom);
         joinButton.onClick.AddListener(JoinRoom);
+        messageText.CrossFadeColor(Color.clear, 0f, true, true);
     }
 
     private void OnDestroy()
@@ -60,11 +61,6 @@ public class MenuUI : MonoBehaviourPunCallbacks
     {
         
         PhotonNetwork.LoadLevel("TestRoom");
-    }
-
-    public override void OnConnectedToMaster()
-    {
-
     }
 
     public override void OnLeftRoom()
