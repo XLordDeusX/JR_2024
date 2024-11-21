@@ -32,7 +32,6 @@ public class HUD : MonoBehaviour
     [PunRPC]
     private void UpdateTimer()
     {
-        Debug.Log(((float)PhotonNetwork.Time - startTime));
         float elapsedTime = matchDuration - ((float)PhotonNetwork.Time - startTime);
 
         float minutes = elapsedTime / 60;

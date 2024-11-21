@@ -49,7 +49,6 @@ public class Character : MonoBehaviour
 
     public void SetTeam(int newTeam)
     {
-        Debug.Log($"Team: {newTeam}");
         _team = newTeam;
         if (_team == 1) teamColor = Color.red;
         else teamColor = Color.blue;
@@ -128,7 +127,6 @@ public class Character : MonoBehaviour
     {
         int attack = SelectAttack();
         _lastComboAttack = attack;
-        Debug.Log($"Attack: {attack}");
         DealDamage(_comboInfo.attacksDamage[attack], _comboInfo.attacksRange[attack], _comboInfo.attacksRadius[attack], _comboInfo.attacksForce[attack]);
         LastAttackTime = Time.time;
     }
@@ -151,7 +149,6 @@ public class Character : MonoBehaviour
             if (victim.gameObject != gameObject)
             {
                 Transform refPoint = victim.GetComponent<Character>().RefPoint;
-                Debug.Log(force * (refPoint.position - _refPoint.position));
                 victim.GetComponent<DamageController>().GetDamage(damage, force * (refPoint.position - _refPoint.position));
             }
         }
