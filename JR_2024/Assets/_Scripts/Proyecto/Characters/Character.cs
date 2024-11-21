@@ -22,6 +22,7 @@ public class Character : MonoBehaviour
     private Collider2D _collider;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
+    private CharacterView _charView;
     public DamageController LifeController => _lifeController;
     private DamageController _lifeController;
     public PhotonView PV => _pv;
@@ -89,6 +90,7 @@ public class Character : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
+        _charView = GetComponent<CharacterView>();
         _lifeController = GetComponent<DamageController>();
         _pv = GetComponent<PhotonView>();
     }
@@ -108,8 +110,8 @@ public class Character : MonoBehaviour
     [PunRPC]
     private void Move()
     {
-
-        if(_hor != 0) _rb.velocity = new Vector2(_hor * _movementSpeed, _rb.velocity.y);
+        _rb.velocity = new Vector2(0, _rb.velocity.y);
+        if (_hor != 0) _rb.velocity = new Vector2(_hor * _movementSpeed, _rb.velocity.y);
         if(_rb.velocity.x > _maxVelocity.x) _rb.velocity = new Vector2(_maxVelocity.x, _rb.velocity.y);
         if(_rb.velocity.y > _maxVelocity.y) _rb.velocity = new Vector2(_rb.velocity.x, _maxVelocity.y);
     }
@@ -121,6 +123,7 @@ public class Character : MonoBehaviour
         _rb.AddForce(_jumpForce * Vector2.up, ForceMode2D.Impulse);
         if (!_isGrounded) _hasDoubleJump = false;
         _isGrounded = false;
+        
     }
     #endregion
 
@@ -161,12 +164,14 @@ public class Character : MonoBehaviour
 
     public IEnumerator Respawn()
     {
-        _animator.SetBool("isSpawning", true);
+        _charView.RespawnAnim(true);
+        //_animator.SetBool("isSpawning", true);
         _rb.simulated = false;
         _rb.velocity = Vector2.zero;
         SetState(CharacterState.Spawning);
         yield return new WaitForSeconds(2f);
-        _animator.SetBool("isSpawning", false);
+        _charView.RespawnAnim(false);
+        //_animator.SetBool("isSpawning", false);
         _rb.simulated = true;
         SetState(CharacterState.Ready);
     }

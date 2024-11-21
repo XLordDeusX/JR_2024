@@ -37,15 +37,22 @@ public class CharacterView : MonoBehaviour
         }
     }
 
-    public void JumpAnim(Vector2 dir)
+    public void JumpAnim(bool action)
     {
-        if (dir.y != 0)
+        if (!action)
         {
-            _anim.SetBool("isMoving", true);
+            _anim.SetTrigger("OnJump");
         }
         else
         {
-            _anim.SetBool("isMoving", false);
+            _anim.SetTrigger("OnLand");
         }
     }
+
+    public void RespawnAnim(bool state)
+    {
+        if(state == true) _anim.SetBool("isSpawning", state);
+        else _anim.SetBool("isSpawning", !state);
+    }
+
 }
