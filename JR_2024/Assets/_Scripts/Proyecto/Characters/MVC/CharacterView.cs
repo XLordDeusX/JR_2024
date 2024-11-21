@@ -7,7 +7,7 @@ public class CharacterView : MonoBehaviour
     private Animator _anim;
     private Character _character;
 
-    void Start()
+    public void Initialize()
     {
         _anim = GetComponent<Animator>();
         _character = GetComponent<Character>();

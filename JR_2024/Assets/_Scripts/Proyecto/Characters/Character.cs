@@ -91,6 +91,7 @@ public class Character : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _charView = GetComponent<CharacterView>();
+        _charView.Initialize();
         _lifeController = GetComponent<DamageController>();
         _pv = GetComponent<PhotonView>();
     }
@@ -170,13 +171,13 @@ public class Character : MonoBehaviour
 
     public IEnumerator Respawn()
     {
-        _charView.RespawnAnim(true);
+        //_charView.RespawnAnim(true);
         //_animator.SetBool("isSpawning", true);
         _rb.simulated = false;
         _rb.velocity = Vector2.zero;
         SetState(CharacterState.Spawning);
         yield return new WaitForSeconds(2f);
-        _charView.RespawnAnim(false);
+        //_charView.RespawnAnim(false);
         //_animator.SetBool("isSpawning", false);
         _rb.simulated = true;
         SetState(CharacterState.Ready);
