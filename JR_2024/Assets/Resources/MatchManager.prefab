@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScore: 3
   playersPerTeam: 1
-  matchTime: 30
+  matchTime: 90
   cam: {fileID: 0}
   hud: {fileID: 0}

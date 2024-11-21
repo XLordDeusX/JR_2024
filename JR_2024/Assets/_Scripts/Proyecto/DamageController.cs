@@ -28,4 +28,6 @@ public class DamageController : MonoBehaviour
         if (_damagePercentage < 1) push *= _damagePercentage;
         _rb.AddForce(push, ForceMode2D.Impulse);
     }
+
+    public void RestartDamage() => _damagePercentage = 0;
 }

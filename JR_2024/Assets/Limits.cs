@@ -15,6 +15,7 @@ public class Limits : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         _matchManager.Updatescore(collision.gameObject.GetComponent<Character>().Team != 1);
+        collision.gameObject.GetComponent<DamageController>().RestartDamage();
         _matchManager.RespawnPlayer(collision.gameObject);
     }
 }
