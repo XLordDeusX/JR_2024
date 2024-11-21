@@ -13,6 +13,7 @@ public class MatchManager : MonoBehaviour
     private int team1Score;
     private int team2Score;
     [SerializeField] int targetScore;
+    public int PlayersPerTeam => playersPerTeam;
     [SerializeField] int playersPerTeam;
 
     private float startTime;

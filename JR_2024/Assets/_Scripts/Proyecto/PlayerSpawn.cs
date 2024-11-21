@@ -43,8 +43,22 @@ public class PlayerSpawn : MonoBehaviour
         if (playerPV != null)
         {
             Character character = playerPV.gameObject.GetComponent<Character>();
+
+            //string nickname = CheckNickname(playerPV);
+
             if (playerPV.IsMine) character.SetNickname(PhotonNetwork.NickName);
             else character.SetNickname(playerPV.Owner.NickName);
         }
+    }
+
+    private void CheckNickname(PhotonView ownPV)
+    {
+        //for (int n = 0; n < PhotonNetwork.PlayerList.Length; n++)
+        //    if (PhotonNetwork.GetPhotonView(PhotonNetwork.PlayerList[n].)  != ownPV && PhotonNetwork.PlayerList[n].NickName == PhotonNetwork.NickName)
+        //    {
+        //        PhotonNetwork.NickName = $"{PhotonNetwork.NickName}{Random.Range(1, GameManager.Instance.MatchManager.PlayersPerTeam*2)}";
+        //        CheckNickname();
+        //    }
+        //return PhotonNetwork.NickName;
     }
 }
