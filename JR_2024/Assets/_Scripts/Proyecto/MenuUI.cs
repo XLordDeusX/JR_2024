@@ -1,6 +1,7 @@
 using Photon.Pun;
-using Photon.Pun.Demo.Cockpit;
 using Photon.Realtime;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,9 +10,13 @@ public class MenuUI : MonoBehaviourPunCallbacks
     [SerializeField] Button createButton;
     [SerializeField] Button joinButton;
 
-    [SerializeField] TMPro.TMP_InputField createInput;
-    [SerializeField] TMPro.TMP_InputField joinInput;
-    [SerializeField] TMPro.TMP_InputField nicknameInput;
+    [SerializeField] TMP_InputField createInput;
+    [SerializeField] TMP_InputField joinInput;
+    [SerializeField] TMP_InputField nicknameInput;
+
+    [SerializeField] TextMeshProUGUI messageText;
+    [SerializeField] float messageWaitTime;
+    [SerializeField] float messageFadingTime;
 
     private void Awake()
     {
@@ -30,7 +35,8 @@ public class MenuUI : MonoBehaviourPunCallbacks
         if (nicknameInput.text != string.Empty) PhotonNetwork.NickName = nicknameInput.text;
         else
         {
-            Debug.Log("Please choose a nickname");
+            StopCoroutine(ShowMessage());
+            StartCoroutine(ShowMessage());
             return;
         }
         RoomOptions roomConfigurations = new RoomOptions();
@@ -43,7 +49,8 @@ public class MenuUI : MonoBehaviourPunCallbacks
         if (nicknameInput.text != string.Empty) PhotonNetwork.NickName = nicknameInput.text;
         else
         {
-            Debug.Log("Please choose a nickname");
+            StopCoroutine(ShowMessage());
+            StartCoroutine(ShowMessage());
             return;
         }
         PhotonNetwork.JoinRoom(joinInput.text);
@@ -68,5 +75,12 @@ public class MenuUI : MonoBehaviourPunCallbacks
         {
             Time.timeScale = 0;
         }
+    }
+
+    IEnumerator ShowMessage()
+    {
+        messageText.CrossFadeColor(Color.red, .25f, true, true);
+        yield return new WaitForSeconds(messageWaitTime);
+        messageText.CrossFadeColor(Color.clear, messageFadingTime, true, true);
     }
 }
