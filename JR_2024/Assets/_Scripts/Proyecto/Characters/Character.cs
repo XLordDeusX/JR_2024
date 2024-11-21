@@ -70,6 +70,8 @@ public class Character : MonoBehaviour
     [SerializeField] private Vector2 _maxVelocity;
     [SerializeField] ComboInfo _comboInfo;
 
+    private bool isAttacking;
+
     private void Awake()
     {
         GetComponents();
@@ -107,7 +109,11 @@ public class Character : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            _charView.AttackAnim();
+             if(!isAttacking)
+            {
+                _charView.AttackAnim();
+                StartCoroutine(AttackState());
+            }
             _pv.RPC("Attack", RpcTarget.AllBuffered);
         }
     }
@@ -153,6 +159,13 @@ public class Character : MonoBehaviour
             return _lastComboAttack;
         }
         else return 0;
+    }
+
+    private IEnumerator AttackState()
+    {
+        isAttacking = true;
+        yield return new WaitForSeconds(_comboInfo.attacksTiming[_lastComboAttack]);
+        isAttacking = false;
     }
 
     private void DealDamage(float damage, float range, float radius, float force)
