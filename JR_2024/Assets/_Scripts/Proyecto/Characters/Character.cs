@@ -181,6 +181,7 @@ public class Character : MonoBehaviour
             case "Ground":
                 _isGrounded = true;
                 _hasDoubleJump = true;
+                if (!_ps.isPlaying) _ps.Play();
                 break;
             case "Spikes":
                 _isGrounded = true;
