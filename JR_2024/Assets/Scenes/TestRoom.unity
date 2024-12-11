@@ -759,7 +759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd0c4691f850214e9028281ea07a7e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _matchManager: {fileID: 0}
 --- !u!50 &393075868
 Rigidbody2D:
   serializedVersion: 4
@@ -22786,6 +22785,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 502191014908661751, guid: f4db3deaa1ab71d4ca3cef207aa3905f, type: 3}
+      propertyPath: sceneViewId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1447495121877448105, guid: f4db3deaa1ab71d4ca3cef207aa3905f, type: 3}
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}

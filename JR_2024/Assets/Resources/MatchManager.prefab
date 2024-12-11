@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bdd5633d17888648a5b844c557f7301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScore: 3
   playersPerTeam: 1
   matchTime: 90
   cam: {fileID: 0}

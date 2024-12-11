@@ -1,20 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using Photon.Pun;
 using UnityEngine;
 
 public class Limits : MonoBehaviour
 {
-    [SerializeField] MatchManager _matchManager;
+    MatchManager _matchManager;
 
     private void Start()
     {
-        _matchManager = FindObjectOfType<MatchManager>();
+        _matchManager = GameManager.Instance.MatchManager;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _matchManager.Updatescore(collision.gameObject.GetComponent<Character>().Team != 1);
+        GameManager.Instance.PV.RPC("UpdateScore", RpcTarget.AllBuffered, collision.gameObject.GetComponent<Character>().Team != 1);
         collision.gameObject.GetComponent<DamageController>().RestartDamage();
         _matchManager.RespawnPlayer(collision.gameObject);
     }
