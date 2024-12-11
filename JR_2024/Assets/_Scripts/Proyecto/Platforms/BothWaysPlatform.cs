@@ -16,7 +16,7 @@ public class BothWaysPlatform : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetAxis("Vertical") < 0)
+        if (Input.GetAxisRaw("Vertical") > 0)
         {
             startTime = Time.time;
             _effector2D.rotationalOffset = 180;

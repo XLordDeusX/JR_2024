@@ -13,7 +13,7 @@ public class Limits : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameManager.Instance.PV.RPC("UpdateScore", RpcTarget.AllBuffered, collision.gameObject.GetComponent<Character>().Team != 1);
-        collision.gameObject.GetComponent<DamageController>().RestartDamage();
+        collision.gameObject.GetComponent<DamageController>().PV.RPC("RestartDamage", RpcTarget.AllBuffered);
         _matchManager.RespawnPlayer(collision.gameObject);
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class DamageController : MonoBehaviour
 {
+    public PhotonView PV => _pv;
     [SerializeField] PhotonView _pv;
     [SerializeField] Rigidbody2D _rb;
         public float Resistance => _resistance;
@@ -29,5 +30,6 @@ public class DamageController : MonoBehaviour
         _rb.AddForce(push, ForceMode2D.Impulse);
     }
 
+    [PunRPC]
     public void RestartDamage() => _damagePercentage = 0;
 }
