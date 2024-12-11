@@ -50,6 +50,13 @@ MonoBehaviour:
   - GetInput
   - SetNickname
   - UpdateTimer
+  - Updatescore
+  - UpdateScore
+  - RestartScore
+  - RestartScores
+  - LoadMenu
+  - Rematch
+  - RestartDamage
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

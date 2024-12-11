@@ -22,6 +22,13 @@ public class GameManager : MonoBehaviour
     public PhotonView PV => _pv;
     private PhotonView _pv;
 
+    public int Team1Score => team1Score;
+    private int team1Score;
+    public int Team2Score => team2Score;
+    private int team2Score;
+    public int TargetScore => targetScore;
+    [SerializeField] int targetScore;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -29,11 +36,53 @@ public class GameManager : MonoBehaviour
 
         GetComponents();
 
-        rematchButton.onClick.AddListener(Rematch);
-        mainMenuButton.onClick.AddListener(LoadMainMenu);
+        rematchButton.onClick.AddListener(OnRematchButtonPressed);
+        mainMenuButton.onClick.AddListener(OnMainMenuButtonPressed);
     }
 
-    public void LoadMainMenu()
+    [PunRPC]
+    public void UpdateScore(bool team1Scored)
+    {
+        if (team1Scored) team1Score++;
+        else team2Score++;
+
+        if (team1Score >= targetScore || team2Score >= targetScore)
+        {
+            bool team1Won = false;
+            if (Team1Score >= TargetScore) team1Won = true;
+            EndMatch(team1Won);
+        }
+    }
+
+    public void EndMatch()
+    {
+        resultText.text = "DRAW";
+        resultText.color = Color.white;
+        ChangeUI();
+        MatchManager.Restart();
+    }
+
+    private void EndMatch(bool team1Won)
+    {
+        SetResult(team1Won);
+        ChangeUI();
+        MatchManager.Restart();
+    }
+
+    [PunRPC]
+    public void RestartScores()
+    {
+        team1Score = 0;
+        team2Score = 0;
+    }
+
+    public void OnMainMenuButtonPressed()
+    {
+        _pv.RPC("LoadMenu", RpcTarget.AllBuffered);
+    }
+
+    [PunRPC]
+    private void LoadMenu()
     {
         Debug.Log("Main menu loaded");
         _sceneManager.LoadScene(1);
@@ -49,19 +98,6 @@ public class GameManager : MonoBehaviour
     {
         _sceneManager = GetComponent<SceneManagerScript>();
         _pv = GetComponent<PhotonView>();
-    }
-
-    public void EndMatch()
-    {
-        resultText.text = "DRAW";
-        resultText.color = Color.white;
-        ChangeUI();
-    }
-
-    public void EndMatch(bool team1Won)
-    {
-        SetResult(team1Won);
-        ChangeUI();
     }
 
     public IEnumerator SetGameplayUI()
@@ -92,7 +128,13 @@ public class GameManager : MonoBehaviour
         } 
     }
 
-    public void Rematch()
+    public void OnRematchButtonPressed()
+    {
+        _pv.RPC("Rematch", RpcTarget.AllBuffered);
+    }
+
+    [PunRPC]
+    private void Rematch()
     {
         ChangeUI();
         FindObjectOfType<MatchManager>().SetMatch();

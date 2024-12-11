@@ -10,9 +10,6 @@ public class MatchManager : MonoBehaviour
     private List<Character> players = new List<Character>();
     private List<Character> team1Members = new List<Character>();
     private List<Character> team2Members = new List<Character>();
-    private int team1Score;
-    private int team2Score;
-    [SerializeField] int targetScore;
     public int PlayersPerTeam => playersPerTeam;
     [SerializeField] int playersPerTeam;
 
@@ -34,7 +31,7 @@ public class MatchManager : MonoBehaviour
     {
         if (isStarted)
         {
-            if(PhotonNetwork.Time >= startTime + matchTime) EndMatch(false);
+            if(PhotonNetwork.Time >= startTime + matchTime) GameManager.Instance.EndMatch();
         }
         else if (playersPerTeam * 2 == players.Count) SetMatch();
     }
@@ -45,8 +42,7 @@ public class MatchManager : MonoBehaviour
     {
         StartCoroutine(GameManager.Instance.SetGameplayUI());
         cam.Start();
-        team1Score = 0;
-        team2Score = 0;
+        GameManager.Instance.PV.RPC("RestartScores", RpcTarget.AllBuffered);
         startTime = (float)PhotonNetwork.Time;
         hud.SetStartTime();
         isStarted = true;
@@ -89,27 +85,8 @@ public class MatchManager : MonoBehaviour
         StartCoroutine(player.Respawn());
     }
 
-    public void Updatescore(bool team1Scored)
-    {
-        if (team1Scored) team1Score++;
-        else team2Score++;
+    public void Restart() => isStarted = false;
 
-        if (targetScore <= team1Score || targetScore <= team2Score) EndMatch(team1Scored);
-    }
-
-    private void EndMatch(bool byScore)
-    {
-        if (byScore)
-        {
-            bool team1Won;
-            if (team1Score >= targetScore) team1Won = true;
-            else team1Won = false;
-            GameManager.Instance.EndMatch(team1Won);
-        }
-        else GameManager.Instance.EndMatch();
-        isStarted = false;
-    }
-    
     private void AsignTeam(Character newPlayer)
     {
         int dif = team2Members.Count - team1Members.Count;

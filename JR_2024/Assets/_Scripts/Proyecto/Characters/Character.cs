@@ -122,7 +122,6 @@ public class Character : MonoBehaviour
     [PunRPC]
     private void Move()
     {
-        _rb.velocity = new Vector2(0, _rb.velocity.y);
         if (_hor != 0) _rb.velocity = new Vector2(_hor * _movementSpeed, _rb.velocity.y);
         if(_rb.velocity.x > _maxVelocity.x) _rb.velocity = new Vector2(_maxVelocity.x, _rb.velocity.y);
         if(_rb.velocity.y > _maxVelocity.y) _rb.velocity = new Vector2(_rb.velocity.x, _maxVelocity.y);

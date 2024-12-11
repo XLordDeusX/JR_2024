@@ -189,6 +189,7 @@ MonoBehaviour:
   rematchButton: {fileID: 3585172688694298218}
   mainMenuButton: {fileID: 3014836450367477738}
   MatchManager: {fileID: 0}
+  targetScore: 3
 --- !u!114 &812437846061727945
 MonoBehaviour:
   m_ObjectHideFlags: 0
