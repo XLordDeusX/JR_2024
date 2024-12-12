@@ -27,7 +27,8 @@ public class Character : MonoBehaviour
     private DamageController _lifeController;
     public PhotonView PV => _pv;
     private PhotonView _pv;
-
+    [SerializeField] private CustomDict<AudioClips, AudioClip> _clips;
+    public CustomDict<AudioClips, AudioClip> Clips => _clips;
     [SerializeField] private ParticleSystem _ps;
 
                 //VARIABLES
@@ -96,6 +97,7 @@ public class Character : MonoBehaviour
         _charView.Initialize();
         _lifeController = GetComponent<DamageController>();
         _pv = GetComponent<PhotonView>();
+        _clips.Initialize();
     }
 
     private void GetInput()
@@ -127,6 +129,7 @@ public class Character : MonoBehaviour
     [PunRPC]
     private void Jump()
     {
+        AudioManager.Instance.PlaySound(_clips.Find(AudioClips.Jump));
         _rb.velocity = new Vector2(_rb.velocity.x, 0);
         _rb.AddForce(_jumpForce * Vector2.up, ForceMode2D.Impulse);
         if (!_isGrounded) _hasDoubleJump = false;
@@ -149,13 +152,14 @@ public class Character : MonoBehaviour
     {
         if(!isAttacking)
         {
-                _charView.AttackAnim();
-                StartCoroutine(AttackState());
+            _charView.AttackAnim();
+            StartCoroutine(AttackState());
         }
     }
     [PunRPC]
     private void Attack()
     {
+        AudioManager.Instance.PlaySound(_clips.Find(AudioClips.Attack));
         int attack = SelectAttack();
         _lastComboAttack = attack;
         DealDamage(_comboInfo.attacksDamage[attack], _comboInfo.attacksRange[attack], _comboInfo.attacksRadius[attack], _comboInfo.attacksForce[attack]);

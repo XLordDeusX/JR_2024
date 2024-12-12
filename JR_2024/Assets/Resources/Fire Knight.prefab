@@ -191,6 +191,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05443a0c021b11343ac50308a195ec12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _clips:
+    Keys: 00000000010000000200000003000000
+    Values:
+    - {fileID: 8300000, guid: d9c784053d1789e4eab91c6bc4753441, type: 3}
+    - {fileID: 8300000, guid: d129a5a8ec00de148836a9fcdcc9568c, type: 3}
+    - {fileID: 8300000, guid: 4cd0ea5e1a7a5114692c99d1f135ae21, type: 3}
+    - {fileID: 8300000, guid: 5d0e586af59463c4f82435c49a5d2e18, type: 3}
   _ps: {fileID: 8373056992648296551}
   _targetLayer:
     serializedVersion: 2
@@ -216,6 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce203365250c7fa4082fd89649a8c8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _owner: {fileID: 8385248253869436373}
   _pv: {fileID: 4842615819262495545}
   _rb: {fileID: 1221540834864857364}
   _anim: {fileID: 4584412907883866100}

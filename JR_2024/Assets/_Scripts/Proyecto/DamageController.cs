@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class DamageController : MonoBehaviour
 {
+    [SerializeField] Character _owner;
     public PhotonView PV => _pv;
     [SerializeField] PhotonView _pv;
     [SerializeField] Rigidbody2D _rb;
@@ -27,6 +28,7 @@ public class DamageController : MonoBehaviour
     [PunRPC]
     private void GetPushed(Vector2 push)
     {
+        AudioManager.Instance.PlaySound(_owner.Clips.Find(AudioClips.Hit));
         if (_damagePercentage < 1) push *= _damagePercentage;
         _rb.AddForce(push, ForceMode2D.Impulse);
         _anim.SetTrigger("OnGetDamage");
