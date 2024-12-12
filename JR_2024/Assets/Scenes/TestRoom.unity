@@ -22697,6 +22697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  mat: {fileID: 6200000, guid: b4b751ac2b9d9d3408d24c085c7dd3f6, type: 2}
 --- !u!4 &1010155656
 Transform:
   m_ObjectHideFlags: 0
