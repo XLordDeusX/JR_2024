@@ -1,4 +1,5 @@
 using Photon.Pun;
+using Photon.Pun.Demo.Cockpit;
 using Photon.Realtime;
 using System.Collections;
 using TMPro;
@@ -14,7 +15,8 @@ public class MenuUI : MonoBehaviourPunCallbacks
     [SerializeField] TMP_InputField joinInput;
     [SerializeField] TMP_InputField nicknameInput;
 
-    [SerializeField] TextMeshProUGUI messageText;
+    [SerializeField] TextMeshProUGUI nicknameMessage;
+    [SerializeField] TextMeshProUGUI roomCodeMessage;
     [SerializeField] float messageWaitTime;
     [SerializeField] float messageFadingTime;
 
@@ -22,7 +24,8 @@ public class MenuUI : MonoBehaviourPunCallbacks
     {
         createButton.onClick.AddListener(CreateRoom);
         joinButton.onClick.AddListener(JoinRoom);
-        messageText.CrossFadeColor(Color.clear, 0f, true, true);
+        nicknameMessage.CrossFadeColor(Color.clear, 0f, true, true);
+        roomCodeMessage.CrossFadeColor(Color.clear, 0f, true, true);
     }
 
     private void OnDestroy()
@@ -36,13 +39,21 @@ public class MenuUI : MonoBehaviourPunCallbacks
         if (nicknameInput.text != string.Empty) PhotonNetwork.NickName = nicknameInput.text;
         else
         {
-            StopCoroutine(ShowMessage());
-            StartCoroutine(ShowMessage());
+            StopCoroutine(ShowNicknameMessage());
+            StartCoroutine(ShowNicknameMessage());
+            return;
+        }
+        string roomCode;
+        if (createInput.text != string.Empty) roomCode = createInput.text;
+        else
+        {
+            StopCoroutine(ShowRoomCodeMessage());
+            StartCoroutine(ShowRoomCodeMessage());
             return;
         }
         RoomOptions roomConfigurations = new RoomOptions();
         roomConfigurations.MaxPlayers = 2;
-        PhotonNetwork.CreateRoom(createInput.text, roomConfigurations);
+        PhotonNetwork.CreateRoom(roomCode, roomConfigurations);
     }
 
     public void JoinRoom()
@@ -50,8 +61,8 @@ public class MenuUI : MonoBehaviourPunCallbacks
         if (nicknameInput.text != string.Empty) PhotonNetwork.NickName = nicknameInput.text;
         else
         {
-            StopCoroutine(ShowMessage());
-            StartCoroutine(ShowMessage());
+            StopCoroutine(ShowNicknameMessage());
+            StartCoroutine(ShowNicknameMessage());
             return;
         }
         PhotonNetwork.JoinRoom(joinInput.text);
@@ -73,10 +84,17 @@ public class MenuUI : MonoBehaviourPunCallbacks
         }
     }
 
-    IEnumerator ShowMessage()
+    IEnumerator ShowNicknameMessage()
     {
-        messageText.CrossFadeColor(Color.red, .25f, true, true);
+        nicknameMessage.CrossFadeColor(Color.red, .25f, true, true);
         yield return new WaitForSeconds(messageWaitTime);
-        messageText.CrossFadeColor(Color.clear, messageFadingTime, true, true);
+        nicknameMessage.CrossFadeColor(Color.clear, messageFadingTime, true, true);
+    }
+
+    IEnumerator ShowRoomCodeMessage()
+    {
+        roomCodeMessage.CrossFadeColor(Color.red, .25f, true, true);
+        yield return new WaitForSeconds(messageWaitTime);
+        roomCodeMessage.CrossFadeColor(Color.clear, messageFadingTime, true, true);
     }
 }
