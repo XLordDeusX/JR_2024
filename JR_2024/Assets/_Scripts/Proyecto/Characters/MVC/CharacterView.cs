@@ -30,15 +30,18 @@ public class CharacterView : MonoBehaviour
             _anim.SetBool("isMoving", false);
         }
     }
-    public void AttackAnim() { _anim.SetTrigger("Attack"); }
+    public void AttackAnim() {  }
     public void AttackAnim(int value)
     {        
         _anim.SetInteger("ComboCount", value + 1);
+        _anim.SetTrigger("OnAttack");
     }
 
     public void JumpAnim() { _anim.SetTrigger("OnJump"); }
 
     public void LandingAnim() { _anim.SetTrigger("OnLand"); }
+
+    public void GetDamageAnim() { _anim.SetTrigger("OnGetDamage"); }
 
     public void RespawnAnim(bool state)
     {

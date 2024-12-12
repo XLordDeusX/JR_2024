@@ -109,12 +109,8 @@ public class Character : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-             if(!isAttacking)
-            {
-                _charView.AttackAnim();
-                StartCoroutine(AttackState());
-            }
             _pv.RPC("Attack", RpcTarget.AllBuffered);
+            _pv.RPC("AttackTest", RpcTarget.AllBuffered);             
         }
     }
 
@@ -136,10 +132,27 @@ public class Character : MonoBehaviour
         if (!_isGrounded) _hasDoubleJump = false;
         _isGrounded = false;
     }
+    [PunRPC]
+    private void Landing(bool playPS, bool playLanding)
+    {
+        _isGrounded = true;
+        _hasDoubleJump = true;
+        if(playLanding) _charView.LandingAnim();
+        if (playPS && !_ps.isPlaying) _ps.Play();
+    }
     #endregion
 
     #region COMBAT
 
+    [PunRPC]
+    private void AttackTest()
+    {
+        if(!isAttacking)
+        {
+                _charView.AttackAnim();
+                StartCoroutine(AttackState());
+        }
+    }
     [PunRPC]
     private void Attack()
     {
@@ -200,15 +213,10 @@ public class Character : MonoBehaviour
         switch(collision.gameObject.tag)
         {
             case "Ground":
-                _isGrounded = true;
-                _hasDoubleJump = true;
-                _charView.LandingAnim();
-                if (!_ps.isPlaying) _ps.Play();
+                _pv.RPC("Landing", RpcTarget.AllBuffered, true, true);
                 break;
             case "Spikes":
-                _isGrounded = true;
-                _hasDoubleJump = true;
-                _charView.LandingAnim();
+                _pv.RPC("Landing", RpcTarget.AllBuffered, false, false);
                 break;
             //case "Limits":
             //    GetDamage(_lifeController.CurrentLife);

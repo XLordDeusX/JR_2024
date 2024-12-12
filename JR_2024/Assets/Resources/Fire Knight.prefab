@@ -218,6 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pv: {fileID: 4842615819262495545}
   _rb: {fileID: 1221540834864857364}
+  _anim: {fileID: 4584412907883866100}
   _resistance: 0.8
 --- !u!114 &260421551447122009
 MonoBehaviour:
@@ -335,12 +336,15 @@ MonoBehaviour:
   - Type: 1
     SynchronizeType: 2
     Name: Falling
-  - Type: 9
-    SynchronizeType: 2
-    Name: Attack
   - Type: 3
     SynchronizeType: 2
     Name: ComboCount
+  - Type: 9
+    SynchronizeType: 2
+    Name: OnAttack
+  - Type: 9
+    SynchronizeType: 2
+    Name: OnGetDamage
   m_SynchronizeLayers:
   - SynchronizeType: 2
     LayerIndex: 0

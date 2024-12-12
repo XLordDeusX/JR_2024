@@ -10,7 +10,8 @@ public class DamageController : MonoBehaviour
     public PhotonView PV => _pv;
     [SerializeField] PhotonView _pv;
     [SerializeField] Rigidbody2D _rb;
-        public float Resistance => _resistance;
+    [SerializeField] private Animator _anim;
+    public float Resistance => _resistance;
     [SerializeField][Range(0,1)] float _resistance;
     public float DamagePercentage => _damagePercentage;
     private float _damagePercentage;
@@ -28,6 +29,7 @@ public class DamageController : MonoBehaviour
     {
         if (_damagePercentage < 1) push *= _damagePercentage;
         _rb.AddForce(push, ForceMode2D.Impulse);
+        _anim.SetTrigger("OnGetDamage");
     }
 
     [PunRPC]
